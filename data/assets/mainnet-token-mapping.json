@@ -1,0 +1,1982 @@
+{
+  "0": {
+    "name": "USDC",
+    "systemAddress": "0x2000000000000000000000000000000000000000",
+    "evmContract": null
+  },
+  "1": {
+    "name": "PURR",
+    "systemAddress": "0x2000000000000000000000000000000000000001",
+    "evmContract": "0x9b498c3c8a0b8cd8ba1d9851d40d186f1872b44e"
+  },
+  "2": {
+    "name": "HFUN",
+    "systemAddress": "0x2000000000000000000000000000000000000002",
+    "evmContract": "0xa320d9f65ec992eff38622c63627856382db726c"
+  },
+  "3": {
+    "name": "LICK",
+    "systemAddress": "0x2000000000000000000000000000000000000003",
+    "evmContract": null
+  },
+  "4": {
+    "name": "MANLET",
+    "systemAddress": "0x2000000000000000000000000000000000000004",
+    "evmContract": null
+  },
+  "5": {
+    "name": "JEFF",
+    "systemAddress": "0x2000000000000000000000000000000000000005",
+    "evmContract": "0x52e444545fbe9e5972a7a371299522f7871aec1f"
+  },
+  "6": {
+    "name": "SIX",
+    "systemAddress": "0x2000000000000000000000000000000000000006",
+    "evmContract": "0x41de34fc45a770ebcd50200be93f080b4b05151f"
+  },
+  "7": {
+    "name": "WAGMI",
+    "systemAddress": "0x2000000000000000000000000000000000000007",
+    "evmContract": null
+  },
+  "8": {
+    "name": "CAPPY",
+    "systemAddress": "0x2000000000000000000000000000000000000008",
+    "evmContract": null
+  },
+  "9": {
+    "name": "POINTS",
+    "systemAddress": "0x2000000000000000000000000000000000000009",
+    "evmContract": null
+  },
+  "10": {
+    "name": "TRUMP",
+    "systemAddress": "0x200000000000000000000000000000000000000a",
+    "evmContract": null
+  },
+  "11": {
+    "name": "GMEOW",
+    "systemAddress": "0x200000000000000000000000000000000000000b",
+    "evmContract": null
+  },
+  "12": {
+    "name": "PEPE",
+    "systemAddress": "0x200000000000000000000000000000000000000c",
+    "evmContract": null
+  },
+  "13": {
+    "name": "XULIAN",
+    "systemAddress": "0x200000000000000000000000000000000000000d",
+    "evmContract": null
+  },
+  "14": {
+    "name": "RUG",
+    "systemAddress": "0x200000000000000000000000000000000000000e",
+    "evmContract": null
+  },
+  "15": {
+    "name": "ILIENS",
+    "systemAddress": "0x200000000000000000000000000000000000000f",
+    "evmContract": null
+  },
+  "16": {
+    "name": "FUCKY",
+    "systemAddress": "0x2000000000000000000000000000000000000010",
+    "evmContract": null
+  },
+  "17": {
+    "name": "CZ",
+    "systemAddress": "0x2000000000000000000000000000000000000011",
+    "evmContract": "0xfdd1834677a50e61fe13e6bce49c8144e333fcbe"
+  },
+  "18": {
+    "name": "BAGS",
+    "systemAddress": "0x2000000000000000000000000000000000000012",
+    "evmContract": null
+  },
+  "19": {
+    "name": "ANSEM",
+    "systemAddress": "0x2000000000000000000000000000000000000013",
+    "evmContract": null
+  },
+  "20": {
+    "name": "TATE",
+    "systemAddress": "0x2000000000000000000000000000000000000014",
+    "evmContract": null
+  },
+  "21": {
+    "name": "FUN",
+    "systemAddress": "0x2000000000000000000000000000000000000015",
+    "evmContract": null
+  },
+  "22": {
+    "name": "SUCKY",
+    "systemAddress": "0x2000000000000000000000000000000000000016",
+    "evmContract": null
+  },
+  "23": {
+    "name": "BIGBEN",
+    "systemAddress": "0x2000000000000000000000000000000000000017",
+    "evmContract": null
+  },
+  "24": {
+    "name": "KOBE",
+    "systemAddress": "0x2000000000000000000000000000000000000018",
+    "evmContract": null
+  },
+  "25": {
+    "name": "VEGAS",
+    "systemAddress": "0x2000000000000000000000000000000000000019",
+    "evmContract": "0xb09158c8297acee00b900dc1f8715df46b7246a6"
+  },
+  "26": {
+    "name": "PUMP",
+    "systemAddress": "0x200000000000000000000000000000000000001a",
+    "evmContract": null
+  },
+  "27": {
+    "name": "SCHIZO",
+    "systemAddress": "0x200000000000000000000000000000000000001b",
+    "evmContract": null
+  },
+  "28": {
+    "name": "CATNIP",
+    "systemAddress": "0x200000000000000000000000000000000000001c",
+    "evmContract": null
+  },
+  "29": {
+    "name": "HAPPY",
+    "systemAddress": "0x200000000000000000000000000000000000001d",
+    "evmContract": null
+  },
+  "30": {
+    "name": "SELL",
+    "systemAddress": "0x200000000000000000000000000000000000001e",
+    "evmContract": null
+  },
+  "31": {
+    "name": "HBOOST",
+    "systemAddress": "0x200000000000000000000000000000000000001f",
+    "evmContract": null
+  },
+  "32": {
+    "name": "FARMED",
+    "systemAddress": "0x2000000000000000000000000000000000000020",
+    "evmContract": null
+  },
+  "33": {
+    "name": "PURRPS",
+    "systemAddress": "0x2000000000000000000000000000000000000021",
+    "evmContract": null
+  },
+  "34": {
+    "name": "GUP",
+    "systemAddress": "0x2000000000000000000000000000000000000022",
+    "evmContract": null
+  },
+  "35": {
+    "name": "GPT",
+    "systemAddress": "0x2000000000000000000000000000000000000023",
+    "evmContract": null
+  },
+  "36": {
+    "name": "PANDA",
+    "systemAddress": "0x2000000000000000000000000000000000000024",
+    "evmContract": null
+  },
+  "37": {
+    "name": "BID",
+    "systemAddress": "0x2000000000000000000000000000000000000025",
+    "evmContract": null
+  },
+  "38": {
+    "name": "HODL",
+    "systemAddress": "0x2000000000000000000000000000000000000026",
+    "evmContract": null
+  },
+  "39": {
+    "name": "RAGE",
+    "systemAddress": "0x2000000000000000000000000000000000000027",
+    "evmContract": null
+  },
+  "40": {
+    "name": "ASI",
+    "systemAddress": "0x2000000000000000000000000000000000000028",
+    "evmContract": null
+  },
+  "41": {
+    "name": "LEAP",
+    "systemAddress": "0x2000000000000000000000000000000000000029",
+    "evmContract": null
+  },
+  "42": {
+    "name": "VAPOR",
+    "systemAddress": "0x200000000000000000000000000000000000002a",
+    "evmContract": null
+  },
+  "43": {
+    "name": "PVP",
+    "systemAddress": "0x200000000000000000000000000000000000002b",
+    "evmContract": null
+  },
+  "44": {
+    "name": "X",
+    "systemAddress": "0x200000000000000000000000000000000000002c",
+    "evmContract": null
+  },
+  "45": {
+    "name": "PILL",
+    "systemAddress": "0x200000000000000000000000000000000000002d",
+    "evmContract": null
+  },
+  "46": {
+    "name": "ADHD",
+    "systemAddress": "0x200000000000000000000000000000000000002e",
+    "evmContract": "0xe3d5f45d97fee83b48c85e00c8359a2e07d68fee"
+  },
+  "47": {
+    "name": "LADY",
+    "systemAddress": "0x200000000000000000000000000000000000002f",
+    "evmContract": null
+  },
+  "48": {
+    "name": "CAT",
+    "systemAddress": "0x2000000000000000000000000000000000000030",
+    "evmContract": "0x04d02cb2e963b4490ee02b1925223d04f9d83fc6"
+  },
+  "49": {
+    "name": "HPEPE",
+    "systemAddress": "0x2000000000000000000000000000000000000031",
+    "evmContract": null
+  },
+  "50": {
+    "name": "MBAPPE",
+    "systemAddress": "0x2000000000000000000000000000000000000032",
+    "evmContract": null
+  },
+  "51": {
+    "name": "MAGA",
+    "systemAddress": "0x2000000000000000000000000000000000000033",
+    "evmContract": null
+  },
+  "52": {
+    "name": "MOG",
+    "systemAddress": "0x2000000000000000000000000000000000000034",
+    "evmContract": null
+  },
+  "53": {
+    "name": "OMNIX",
+    "systemAddress": "0x2000000000000000000000000000000000000035",
+    "evmContract": "0x45ec8f63fe934c0213476cfb5870835e61dd11fa"
+  },
+  "54": {
+    "name": "COKE",
+    "systemAddress": "0x2000000000000000000000000000000000000036",
+    "evmContract": null
+  },
+  "55": {
+    "name": "JEET",
+    "systemAddress": "0x2000000000000000000000000000000000000037",
+    "evmContract": null
+  },
+  "56": {
+    "name": "DROP",
+    "systemAddress": "0x2000000000000000000000000000000000000038",
+    "evmContract": null
+  },
+  "57": {
+    "name": "CBD",
+    "systemAddress": "0x2000000000000000000000000000000000000039",
+    "evmContract": null
+  },
+  "58": {
+    "name": "ARI",
+    "systemAddress": "0x200000000000000000000000000000000000003a",
+    "evmContract": null
+  },
+  "59": {
+    "name": "TEST",
+    "systemAddress": "0x200000000000000000000000000000000000003b",
+    "evmContract": null
+  },
+  "60": {
+    "name": "KING",
+    "systemAddress": "0x200000000000000000000000000000000000003c",
+    "evmContract": null
+  },
+  "61": {
+    "name": "MEOW",
+    "systemAddress": "0x200000000000000000000000000000000000003d",
+    "evmContract": null
+  },
+  "62": {
+    "name": "ANT",
+    "systemAddress": "0x200000000000000000000000000000000000003e",
+    "evmContract": null
+  },
+  "63": {
+    "name": "FRAC",
+    "systemAddress": "0x200000000000000000000000000000000000003f",
+    "evmContract": null
+  },
+  "64": {
+    "name": "ATEHUN",
+    "systemAddress": "0x2000000000000000000000000000000000000040",
+    "evmContract": null
+  },
+  "65": {
+    "name": "FRCT",
+    "systemAddress": "0x2000000000000000000000000000000000000041",
+    "evmContract": null
+  },
+  "66": {
+    "name": "COZY",
+    "systemAddress": "0x2000000000000000000000000000000000000042",
+    "evmContract": null
+  },
+  "67": {
+    "name": "WASH",
+    "systemAddress": "0x2000000000000000000000000000000000000043",
+    "evmContract": null
+  },
+  "68": {
+    "name": "POP",
+    "systemAddress": "0x2000000000000000000000000000000000000044",
+    "evmContract": null
+  },
+  "69": {
+    "name": "NFT",
+    "systemAddress": "0x2000000000000000000000000000000000000045",
+    "evmContract": null
+  },
+  "70": {
+    "name": "JEFE",
+    "systemAddress": "0x2000000000000000000000000000000000000046",
+    "evmContract": null
+  },
+  "71": {
+    "name": "PEAR",
+    "systemAddress": "0x2000000000000000000000000000000000000047",
+    "evmContract": null
+  },
+  "72": {
+    "name": "RICH",
+    "systemAddress": "0x2000000000000000000000000000000000000048",
+    "evmContract": null
+  },
+  "73": {
+    "name": "BRIDGE",
+    "systemAddress": "0x2000000000000000000000000000000000000049",
+    "evmContract": "0x29dbf86a8c48ea4331e28b3c1eae824a2a45996a"
+  },
+  "74": {
+    "name": "GUESS",
+    "systemAddress": "0x200000000000000000000000000000000000004a",
+    "evmContract": null
+  },
+  "75": {
+    "name": "LORA",
+    "systemAddress": "0x200000000000000000000000000000000000004b",
+    "evmContract": null
+  },
+  "76": {
+    "name": "CATBAL",
+    "systemAddress": "0x200000000000000000000000000000000000004c",
+    "evmContract": "0x11735dbd0b97cfa7accf47d005673ba185f7fd49"
+  },
+  "77": {
+    "name": "TJIF",
+    "systemAddress": "0x200000000000000000000000000000000000004d",
+    "evmContract": null
+  },
+  "78": {
+    "name": "NEIRO",
+    "systemAddress": "0x200000000000000000000000000000000000004e",
+    "evmContract": null
+  },
+  "79": {
+    "name": "TIME",
+    "systemAddress": "0x200000000000000000000000000000000000004f",
+    "evmContract": "0x266a2491f782eb03b369760889fff8785efb3e46"
+  },
+  "80": {
+    "name": "BERA",
+    "systemAddress": "0x2000000000000000000000000000000000000050",
+    "evmContract": null
+  },
+  "81": {
+    "name": "ANGY",
+    "systemAddress": "0x2000000000000000000000000000000000000051",
+    "evmContract": null
+  },
+  "82": {
+    "name": "DOG",
+    "systemAddress": "0x2000000000000000000000000000000000000052",
+    "evmContract": null
+  },
+  "83": {
+    "name": "MOON",
+    "systemAddress": "0x2000000000000000000000000000000000000053",
+    "evmContract": null
+  },
+  "84": {
+    "name": "MAXI",
+    "systemAddress": "0x2000000000000000000000000000000000000054",
+    "evmContract": null
+  },
+  "85": {
+    "name": "PAIN",
+    "systemAddress": "0x2000000000000000000000000000000000000055",
+    "evmContract": null
+  },
+  "86": {
+    "name": "VDO",
+    "systemAddress": "0x2000000000000000000000000000000000000056",
+    "evmContract": null
+  },
+  "87": {
+    "name": "HQ",
+    "systemAddress": "0x2000000000000000000000000000000000000057",
+    "evmContract": null
+  },
+  "88": {
+    "name": "EUR",
+    "systemAddress": "0x2000000000000000000000000000000000000058",
+    "evmContract": null
+  },
+  "89": {
+    "name": "REGARD",
+    "systemAddress": "0x2000000000000000000000000000000000000059",
+    "evmContract": null
+  },
+  "90": {
+    "name": "YUM",
+    "systemAddress": "0x200000000000000000000000000000000000005a",
+    "evmContract": null
+  },
+  "91": {
+    "name": "REKT",
+    "systemAddress": "0x200000000000000000000000000000000000005b",
+    "evmContract": null
+  },
+  "92": {
+    "name": "NMTD",
+    "systemAddress": "0x200000000000000000000000000000000000005c",
+    "evmContract": null
+  },
+  "93": {
+    "name": "HPUMP",
+    "systemAddress": "0x200000000000000000000000000000000000005d",
+    "evmContract": null
+  },
+  "94": {
+    "name": "PIGEON",
+    "systemAddress": "0x200000000000000000000000000000000000005e",
+    "evmContract": null
+  },
+  "95": {
+    "name": "LAUNCH",
+    "systemAddress": "0x200000000000000000000000000000000000005f",
+    "evmContract": "0x4533c3002660117a56fa44ed3c4bf4b6a8e0b0a2"
+  },
+  "96": {
+    "name": "IRL",
+    "systemAddress": "0x2000000000000000000000000000000000000060",
+    "evmContract": null
+  },
+  "97": {
+    "name": "RISE",
+    "systemAddress": "0x2000000000000000000000000000000000000061",
+    "evmContract": null
+  },
+  "98": {
+    "name": "WOW",
+    "systemAddress": "0x2000000000000000000000000000000000000062",
+    "evmContract": "0x93f12d8931e97cf41d5934bb5d302aa0e2623305"
+  },
+  "99": {
+    "name": "CINDY",
+    "systemAddress": "0x2000000000000000000000000000000000000063",
+    "evmContract": null
+  },
+  "100": {
+    "name": "CHINA",
+    "systemAddress": "0x2000000000000000000000000000000000000064",
+    "evmContract": null
+  },
+  "101": {
+    "name": "STACK",
+    "systemAddress": "0x2000000000000000000000000000000000000065",
+    "evmContract": null
+  },
+  "102": {
+    "name": "FRIED",
+    "systemAddress": "0x2000000000000000000000000000000000000066",
+    "evmContract": null
+  },
+  "103": {
+    "name": "PICKL",
+    "systemAddress": "0x2000000000000000000000000000000000000067",
+    "evmContract": null
+  },
+  "104": {
+    "name": "SHREK",
+    "systemAddress": "0x2000000000000000000000000000000000000068",
+    "evmContract": null
+  },
+  "105": {
+    "name": "NOCEX",
+    "systemAddress": "0x2000000000000000000000000000000000000069",
+    "evmContract": "0x9281973406d2d347fe2ff2af7daa36464b618bbb"
+  },
+  "106": {
+    "name": "VAULT",
+    "systemAddress": "0x200000000000000000000000000000000000006a",
+    "evmContract": null
+  },
+  "107": {
+    "name": "RANK",
+    "systemAddress": "0x200000000000000000000000000000000000006b",
+    "evmContract": null
+  },
+  "108": {
+    "name": "L",
+    "systemAddress": "0x200000000000000000000000000000000000006c",
+    "evmContract": null
+  },
+  "109": {
+    "name": "H",
+    "systemAddress": "0x200000000000000000000000000000000000006d",
+    "evmContract": "0x78c3791ea49a7c6f41e87ba96c7d09a493febb1e"
+  },
+  "110": {
+    "name": "G",
+    "systemAddress": "0x200000000000000000000000000000000000006e",
+    "evmContract": null
+  },
+  "111": {
+    "name": "SCAM",
+    "systemAddress": "0x200000000000000000000000000000000000006f",
+    "evmContract": null
+  },
+  "112": {
+    "name": "MONAD",
+    "systemAddress": "0x2000000000000000000000000000000000000070",
+    "evmContract": null
+  },
+  "113": {
+    "name": "BOZO",
+    "systemAddress": "0x2000000000000000000000000000000000000071",
+    "evmContract": null
+  },
+  "114": {
+    "name": "RIP",
+    "systemAddress": "0x2000000000000000000000000000000000000072",
+    "evmContract": null
+  },
+  "115": {
+    "name": "UP",
+    "systemAddress": "0x2000000000000000000000000000000000000073",
+    "evmContract": null
+  },
+  "116": {
+    "name": "GIGA",
+    "systemAddress": "0x2000000000000000000000000000000000000074",
+    "evmContract": null
+  },
+  "117": {
+    "name": "FELIX",
+    "systemAddress": "0x2000000000000000000000000000000000000075",
+    "evmContract": null
+  },
+  "118": {
+    "name": "SPH",
+    "systemAddress": "0x2000000000000000000000000000000000000076",
+    "evmContract": "0xd2fe47eed2d52725d9e3ae6df45593837f57c1a2"
+  },
+  "119": {
+    "name": "STHYPE",
+    "systemAddress": "0x2000000000000000000000000000000000000077",
+    "evmContract": null
+  },
+  "120": {
+    "name": "HPL",
+    "systemAddress": "0x2000000000000000000000000000000000000078",
+    "evmContract": null
+  },
+  "121": {
+    "name": "KHYPE",
+    "systemAddress": "0x2000000000000000000000000000000000000079",
+    "evmContract": null
+  },
+  "122": {
+    "name": "HOPE",
+    "systemAddress": "0x200000000000000000000000000000000000007a",
+    "evmContract": "0x869ac826b78bc1d9501014994196e41025b5224b"
+  },
+  "123": {
+    "name": "SHOE",
+    "systemAddress": "0x200000000000000000000000000000000000007b",
+    "evmContract": null
+  },
+  "124": {
+    "name": "KNTQ",
+    "systemAddress": "0x200000000000000000000000000000000000007c",
+    "evmContract": null
+  },
+  "125": {
+    "name": "BUSSY",
+    "systemAddress": "0x200000000000000000000000000000000000007d",
+    "evmContract": null
+  },
+  "126": {
+    "name": "FATCAT",
+    "systemAddress": "0x200000000000000000000000000000000000007e",
+    "evmContract": null
+  },
+  "127": {
+    "name": "PIP",
+    "systemAddress": "0x200000000000000000000000000000000000007f",
+    "evmContract": "0x1bee6762f0b522c606dc2ffb106c0bb391b2e309"
+  },
+  "128": {
+    "name": "YEETI",
+    "systemAddress": "0x2000000000000000000000000000000000000080",
+    "evmContract": "0x7280cc1f369ab574c35cb8a8d0885e9486e3b733"
+  },
+  "129": {
+    "name": "LQNA",
+    "systemAddress": "0x2000000000000000000000000000000000000081",
+    "evmContract": "0xa94676f34f6a2764c7fde5611b53834b71f228ec"
+  },
+  "130": {
+    "name": "NASDAQ",
+    "systemAddress": "0x2000000000000000000000000000000000000082",
+    "evmContract": null
+  },
+  "131": {
+    "name": "SYLVI",
+    "systemAddress": "0x2000000000000000000000000000000000000083",
+    "evmContract": "0x769a227178f37da50371200eb93aa71a214ca874"
+  },
+  "132": {
+    "name": "FEIT",
+    "systemAddress": "0x2000000000000000000000000000000000000084",
+    "evmContract": null
+  },
+  "133": {
+    "name": "STRICT",
+    "systemAddress": "0x2000000000000000000000000000000000000085",
+    "evmContract": null
+  },
+  "134": {
+    "name": "FRUDO",
+    "systemAddress": "0x2000000000000000000000000000000000000086",
+    "evmContract": null
+  },
+  "135": {
+    "name": "VIZN",
+    "systemAddress": "0x2222222222222222222222222222222222222222",
+    "evmContract": null
+  },
+  "136": {
+    "name": "AUTIST",
+    "systemAddress": "0x2000000000000000000000000000000000000088",
+    "evmContract": null
+  },
+  "137": {
+    "name": "HGOD",
+    "systemAddress": "0x2000000000000000000000000000000000000089",
+    "evmContract": null
+  },
+  "138": {
+    "name": "LIQUID",
+    "systemAddress": "0x200000000000000000000000000000000000008a",
+    "evmContract": null
+  },
+  "139": {
+    "name": "CHEF",
+    "systemAddress": "0x200000000000000000000000000000000000008b",
+    "evmContract": null
+  },
+  "140": {
+    "name": "AZUR",
+    "systemAddress": "0x200000000000000000000000000000000000008c",
+    "evmContract": null
+  },
+  "141": {
+    "name": "EARTH",
+    "systemAddress": "0x200000000000000000000000000000000000008d",
+    "evmContract": null
+  },
+  "142": {
+    "name": "NIGGO",
+    "systemAddress": "0x200000000000000000000000000000000000008e",
+    "evmContract": "0xc1631903081b19f0b7117f34192c7db48960989c"
+  },
+  "143": {
+    "name": "LUCKY",
+    "systemAddress": "0x200000000000000000000000000000000000008f",
+    "evmContract": null
+  },
+  "144": {
+    "name": "HOP",
+    "systemAddress": "0x2000000000000000000000000000000000000090",
+    "evmContract": null
+  },
+  "145": {
+    "name": "FAN",
+    "systemAddress": "0x2000000000000000000000000000000000000091",
+    "evmContract": null
+  },
+  "146": {
+    "name": "MUNCH",
+    "systemAddress": "0x2000000000000000000000000000000000000092",
+    "evmContract": null
+  },
+  "147": {
+    "name": "COPE",
+    "systemAddress": "0x2000000000000000000000000000000000000093",
+    "evmContract": null
+  },
+  "148": {
+    "name": "HPYH",
+    "systemAddress": "0x2000000000000000000000000000000000000094",
+    "evmContract": null
+  },
+  "149": {
+    "name": "YAP",
+    "systemAddress": "0x2000000000000000000000000000000000000095",
+    "evmContract": null
+  },
+  "150": {
+    "name": "HYPE",
+    "systemAddress": "0x2000000000000000000000000000000000000096",
+    "evmContract": null
+  },
+  "151": {
+    "name": "STEEL",
+    "systemAddress": "0x2000000000000000000000000000000000000097",
+    "evmContract": null
+  },
+  "152": {
+    "name": "RETARD",
+    "systemAddress": "0x2000000000000000000000000000000000000098",
+    "evmContract": null
+  },
+  "153": {
+    "name": "HOLD",
+    "systemAddress": "0x2000000000000000000000000000000000000099",
+    "evmContract": "0x896ab745155e8c354183face6bff6270c01fb106"
+  },
+  "154": {
+    "name": "STAR",
+    "systemAddress": "0x200000000000000000000000000000000000009a",
+    "evmContract": null
+  },
+  "155": {
+    "name": "WATAR",
+    "systemAddress": "0x200000000000000000000000000000000000009b",
+    "evmContract": null
+  },
+  "156": {
+    "name": "GENESY",
+    "systemAddress": "0x200000000000000000000000000000000000009c",
+    "evmContract": "0x6f7e96c0267cd22fe04346af21f8c6ff54372939"
+  },
+  "157": {
+    "name": "SOLV",
+    "systemAddress": "0x200000000000000000000000000000000000009d",
+    "evmContract": null
+  },
+  "158": {
+    "name": "BUBZ",
+    "systemAddress": "0x200000000000000000000000000000000000009e",
+    "evmContract": null
+  },
+  "159": {
+    "name": "SHEEP",
+    "systemAddress": "0x200000000000000000000000000000000000009f",
+    "evmContract": "0x27542a8d608ee16322fae739c46e6e6ae6d2828a"
+  },
+  "160": {
+    "name": "HYFI",
+    "systemAddress": "0x20000000000000000000000000000000000000a0",
+    "evmContract": null
+  },
+  "161": {
+    "name": "FARM",
+    "systemAddress": "0x20000000000000000000000000000000000000a1",
+    "evmContract": "0x3880c8cf09a5454dc9cb851b08c785e55504f63c"
+  },
+  "162": {
+    "name": "FLASK",
+    "systemAddress": "0x20000000000000000000000000000000000000a2",
+    "evmContract": null
+  },
+  "163": {
+    "name": "SOVRN",
+    "systemAddress": "0x20000000000000000000000000000000000000a3",
+    "evmContract": null
+  },
+  "164": {
+    "name": "MON",
+    "systemAddress": "0x20000000000000000000000000000000000000a4",
+    "evmContract": null
+  },
+  "165": {
+    "name": "GOD",
+    "systemAddress": "0x20000000000000000000000000000000000000a5",
+    "evmContract": null
+  },
+  "166": {
+    "name": "CREAM",
+    "systemAddress": "0x20000000000000000000000000000000000000a6",
+    "evmContract": null
+  },
+  "167": {
+    "name": "ANIME",
+    "systemAddress": "0x20000000000000000000000000000000000000a7",
+    "evmContract": null
+  },
+  "168": {
+    "name": "HYENA",
+    "systemAddress": "0x20000000000000000000000000000000000000a8",
+    "evmContract": null
+  },
+  "169": {
+    "name": "ETHC",
+    "systemAddress": "0x20000000000000000000000000000000000000a9",
+    "evmContract": null
+  },
+  "170": {
+    "name": "ANZ",
+    "systemAddress": "0x20000000000000000000000000000000000000aa",
+    "evmContract": "0xdf3dee6d24d4f369e0e290533d47ef9cf44abbdb"
+  },
+  "171": {
+    "name": "GAME",
+    "systemAddress": "0x20000000000000000000000000000000000000ab",
+    "evmContract": null
+  },
+  "172": {
+    "name": "RIFT",
+    "systemAddress": "0x20000000000000000000000000000000000000ac",
+    "evmContract": null
+  },
+  "173": {
+    "name": "SWELL",
+    "systemAddress": "0x20000000000000000000000000000000000000ad",
+    "evmContract": null
+  },
+  "174": {
+    "name": "DEPIN",
+    "systemAddress": "0x20000000000000000000000000000000000000ae",
+    "evmContract": "0xa085221178b4cb7e40415bca547e76e223e6d137"
+  },
+  "175": {
+    "name": "ROUTE",
+    "systemAddress": "0x20000000000000000000000000000000000000af",
+    "evmContract": null
+  },
+  "176": {
+    "name": "BEATS",
+    "systemAddress": "0x20000000000000000000000000000000000000b0",
+    "evmContract": "0x710a6c044d23949ba3b98ce13d762503c9708ba3"
+  },
+  "177": {
+    "name": "ORA",
+    "systemAddress": "0x20000000000000000000000000000000000000b1",
+    "evmContract": null
+  },
+  "178": {
+    "name": "LIQD",
+    "systemAddress": "0x20000000000000000000000000000000000000b2",
+    "evmContract": "0x1ecd15865d7f8019d546f76d095d9c93cc34edfa"
+  },
+  "179": {
+    "name": "XBG",
+    "systemAddress": "0x20000000000000000000000000000000000000b3",
+    "evmContract": null
+  },
+  "180": {
+    "name": "HETU",
+    "systemAddress": "0x20000000000000000000000000000000000000b4",
+    "evmContract": null
+  },
+  "181": {
+    "name": "GG",
+    "systemAddress": "0x20000000000000000000000000000000000000b5",
+    "evmContract": null
+  },
+  "182": {
+    "name": "WOOL",
+    "systemAddress": "0x20000000000000000000000000000000000000b6",
+    "evmContract": null
+  },
+  "183": {
+    "name": "ISLAND",
+    "systemAddress": "0x20000000000000000000000000000000000000b7",
+    "evmContract": "0x1f170f59849bf2e11a051e9da1213d672baa8748"
+  },
+  "184": {
+    "name": "SIPHER",
+    "systemAddress": "0x20000000000000000000000000000000000000b8",
+    "evmContract": null
+  },
+  "185": {
+    "name": "DBR",
+    "systemAddress": "0x20000000000000000000000000000000000000b9",
+    "evmContract": null
+  },
+  "186": {
+    "name": "SENT",
+    "systemAddress": "0x20000000000000000000000000000000000000ba",
+    "evmContract": "0xed912f61368be50835ad7696f67d106b0cd08fe2"
+  },
+  "187": {
+    "name": "FLY",
+    "systemAddress": "0x20000000000000000000000000000000000000bb",
+    "evmContract": "0x3f244819a8359145a8e7cf0272955e4918a50627"
+  },
+  "188": {
+    "name": "SSS",
+    "systemAddress": "0x20000000000000000000000000000000000000bc",
+    "evmContract": null
+  },
+  "189": {
+    "name": "HWTR",
+    "systemAddress": "0x20000000000000000000000000000000000000bd",
+    "evmContract": "0x5804bf271d9e691611eea1267b24c1f3d0723639"
+  },
+  "190": {
+    "name": "NEKO",
+    "systemAddress": "0x20000000000000000000000000000000000000be",
+    "evmContract": null
+  },
+  "191": {
+    "name": "UNIT",
+    "systemAddress": "0x20000000000000000000000000000000000000bf",
+    "evmContract": null
+  },
+  "192": {
+    "name": "PEG",
+    "systemAddress": "0x20000000000000000000000000000000000000c0",
+    "evmContract": "0x28245ab01298eaef7933bc90d35bd9dbca5c89db"
+  },
+  "193": {
+    "name": "NEURAL",
+    "systemAddress": "0x20000000000000000000000000000000000000c1",
+    "evmContract": null
+  },
+  "194": {
+    "name": "PIE",
+    "systemAddress": "0x20000000000000000000000000000000000000c2",
+    "evmContract": null
+  },
+  "195": {
+    "name": "DRIVE",
+    "systemAddress": "0x20000000000000000000000000000000000000c3",
+    "evmContract": null
+  },
+  "196": {
+    "name": "JPEG",
+    "systemAddress": "0x20000000000000000000000000000000000000c4",
+    "evmContract": "0xc11579f984d07af75b0164ac458583a0d39d619a"
+  },
+  "197": {
+    "name": "UBTC",
+    "systemAddress": "0x20000000000000000000000000000000000000c5",
+    "evmContract": "0x9fdbda0a5e284c32744d2f17ee5c74b284993463"
+  },
+  "198": {
+    "name": "TGE",
+    "systemAddress": "0x20000000000000000000000000000000000000c6",
+    "evmContract": null
+  },
+  "199": {
+    "name": "HEAD",
+    "systemAddress": "0x20000000000000000000000000000000000000c7",
+    "evmContract": "0xa0999b04c23e8b73961a97b463067d9bea5b953c"
+  },
+  "200": {
+    "name": "EDGE",
+    "systemAddress": "0x20000000000000000000000000000000000000c8",
+    "evmContract": null
+  },
+  "201": {
+    "name": "GEN",
+    "systemAddress": "0x20000000000000000000000000000000000000c9",
+    "evmContract": null
+  },
+  "202": {
+    "name": "PRFI",
+    "systemAddress": "0x20000000000000000000000000000000000000ca",
+    "evmContract": "0x7bbcf1b600565ae023a1806ef637af4739de3255"
+  },
+  "203": {
+    "name": "REI",
+    "systemAddress": "0x20000000000000000000000000000000000000cb",
+    "evmContract": "0xa4907f0e6bf36341516ba3d9d2524ea92f521e65"
+  },
+  "204": {
+    "name": "VORTX",
+    "systemAddress": "0x20000000000000000000000000000000000000cc",
+    "evmContract": "0xc12b4dd5268322ddbe3d6f65ebb1ce37a9951315"
+  },
+  "205": {
+    "name": "HAR",
+    "systemAddress": "0x20000000000000000000000000000000000000cd",
+    "evmContract": null
+  },
+  "206": {
+    "name": "DEFIN",
+    "systemAddress": "0x20000000000000000000000000000000000000ce",
+    "evmContract": null
+  },
+  "207": {
+    "name": "APU",
+    "systemAddress": "0x20000000000000000000000000000000000000cf",
+    "evmContract": "0xcbb8e1a8d5f9ee59c5a331f6c8556cca8e01cf10"
+  },
+  "208": {
+    "name": "MOCA",
+    "systemAddress": "0x20000000000000000000000000000000000000d0",
+    "evmContract": null
+  },
+  "209": {
+    "name": "TILT",
+    "systemAddress": "0x20000000000000000000000000000000000000d1",
+    "evmContract": null
+  },
+  "210": {
+    "name": "SPR",
+    "systemAddress": "0x20000000000000000000000000000000000000d2",
+    "evmContract": null
+  },
+  "211": {
+    "name": "HIPPO",
+    "systemAddress": "0x20000000000000000000000000000000000000d3",
+    "evmContract": null
+  },
+  "212": {
+    "name": "HANA",
+    "systemAddress": "0x20000000000000000000000000000000000000d4",
+    "evmContract": null
+  },
+  "213": {
+    "name": "SWAP",
+    "systemAddress": "0x20000000000000000000000000000000000000d5",
+    "evmContract": "0x03832767bdf9a8ef007449942125ad605acfadb8"
+  },
+  "214": {
+    "name": "MORE",
+    "systemAddress": "0x20000000000000000000000000000000000000d6",
+    "evmContract": null
+  },
+  "215": {
+    "name": "LOOT",
+    "systemAddress": "0x20000000000000000000000000000000000000d7",
+    "evmContract": null
+  },
+  "216": {
+    "name": "LUMI",
+    "systemAddress": "0x20000000000000000000000000000000000000d8",
+    "evmContract": null
+  },
+  "217": {
+    "name": "WHYPI",
+    "systemAddress": "0x20000000000000000000000000000000000000d9",
+    "evmContract": null
+  },
+  "218": {
+    "name": "ANON",
+    "systemAddress": "0x20000000000000000000000000000000000000da",
+    "evmContract": "0x79bbf4508b1391af3a0f4b30bb5fc4aa9ab0e07c"
+  },
+  "219": {
+    "name": "OTTI",
+    "systemAddress": "0x20000000000000000000000000000000000000db",
+    "evmContract": "0xe45b3fc1f0032532e3d8a3c141cd258bd3eed368"
+  },
+  "220": {
+    "name": "HORSY",
+    "systemAddress": "0x20000000000000000000000000000000000000dc",
+    "evmContract": "0xd918e114a473ebb3c7688d9a7373838582cb0539"
+  },
+  "221": {
+    "name": "UETH",
+    "systemAddress": "0x20000000000000000000000000000000000000dd",
+    "evmContract": "0xbe6727b535545c67d5caa73dea54865b92cf7907"
+  },
+  "222": {
+    "name": "BUDDY",
+    "systemAddress": "0x20000000000000000000000000000000000000de",
+    "evmContract": "0x47bb061c0204af921f43dc73c7d7768d2672ddee"
+  },
+  "223": {
+    "name": "LATINA",
+    "systemAddress": "0x20000000000000000000000000000000000000df",
+    "evmContract": "0xe7eaa46c2ac8470d622ada1538fede6242cebe53"
+  },
+  "224": {
+    "name": "WLFI",
+    "systemAddress": "0x20000000000000000000000000000000000000e0",
+    "evmContract": null
+  },
+  "225": {
+    "name": "AIR",
+    "systemAddress": "0x20000000000000000000000000000000000000e1",
+    "evmContract": null
+  },
+  "226": {
+    "name": "K",
+    "systemAddress": "0x20000000000000000000000000000000000000e2",
+    "evmContract": null
+  },
+  "227": {
+    "name": "PLUME",
+    "systemAddress": "0x20000000000000000000000000000000000000e3",
+    "evmContract": "0xcc0f1a2a451fb7bb0c97602e890ef0fe8b6b2e15"
+  },
+  "228": {
+    "name": "LIM",
+    "systemAddress": "0x20000000000000000000000000000000000000e4",
+    "evmContract": null
+  },
+  "229": {
+    "name": "HUSD",
+    "systemAddress": "0x20000000000000000000000000000000000000e5",
+    "evmContract": null
+  },
+  "230": {
+    "name": "DHYPE",
+    "systemAddress": "0x20000000000000000000000000000000000000e6",
+    "evmContract": null
+  },
+  "231": {
+    "name": "EDA",
+    "systemAddress": "0x20000000000000000000000000000000000000e7",
+    "evmContract": null
+  },
+  "232": {
+    "name": "FUND",
+    "systemAddress": "0x20000000000000000000000000000000000000e8",
+    "evmContract": "0x89b0fe193887d731a2b48a5d87a1185214482ad5"
+  },
+  "233": {
+    "name": "EXP",
+    "systemAddress": "0x20000000000000000000000000000000000000e9",
+    "evmContract": null
+  },
+  "234": {
+    "name": "SENTI",
+    "systemAddress": "0x20000000000000000000000000000000000000ea",
+    "evmContract": null
+  },
+  "235": {
+    "name": "USDE",
+    "systemAddress": "0x20000000000000000000000000000000000000eb",
+    "evmContract": "0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34"
+  },
+  "236": {
+    "name": "HIP",
+    "systemAddress": "0x20000000000000000000000000000000000000ec",
+    "evmContract": null
+  },
+  "237": {
+    "name": "SLAY",
+    "systemAddress": "0x20000000000000000000000000000000000000ed",
+    "evmContract": "0x9efdfc72c1bc90b36f8aae35247e62310c58eacf"
+  },
+  "238": {
+    "name": "B",
+    "systemAddress": "0x20000000000000000000000000000000000000ee",
+    "evmContract": null
+  },
+  "239": {
+    "name": "USDXL",
+    "systemAddress": "0x20000000000000000000000000000000000000ef",
+    "evmContract": "0xca79db4b49f608ef54a5cb813fbed3a6387bc645"
+  },
+  "240": {
+    "name": "USH",
+    "systemAddress": "0x20000000000000000000000000000000000000f0",
+    "evmContract": "0x8ff0dd9f9c40a0d76ef1bcfaf5f98c1610c74bd8"
+  },
+  "241": {
+    "name": "FEUSD",
+    "systemAddress": "0x20000000000000000000000000000000000000f1",
+    "evmContract": "0x02c6a2fa58cc01a18b8d9e00ea48d65e4df26c70"
+  },
+  "242": {
+    "name": "COOK",
+    "systemAddress": "0x20000000000000000000000000000000000000f2",
+    "evmContract": "0x9f0c013016e8656bc256f948cd4b79ab25c7b94d"
+  },
+  "243": {
+    "name": "OKI",
+    "systemAddress": "0x20000000000000000000000000000000000000f3",
+    "evmContract": null
+  },
+  "244": {
+    "name": "BORG",
+    "systemAddress": "0x20000000000000000000000000000000000000f4",
+    "evmContract": null
+  },
+  "245": {
+    "name": "SIGN",
+    "systemAddress": "0x20000000000000000000000000000000000000f5",
+    "evmContract": null
+  },
+  "246": {
+    "name": "WMNT",
+    "systemAddress": "0x20000000000000000000000000000000000000f6",
+    "evmContract": "0x36721e62edea413dc5195c4ca9c5a7eb175feb6b"
+  },
+  "247": {
+    "name": "KITTEN",
+    "systemAddress": "0x20000000000000000000000000000000000000f7",
+    "evmContract": "0x618275f8efe54c2afa87bfb9f210a52f0ff89364"
+  },
+  "248": {
+    "name": "USR",
+    "systemAddress": "0x20000000000000000000000000000000000000f8",
+    "evmContract": "0x0ad339d66bf4aed5ce31c64bc37b3244b6394a77"
+  },
+  "249": {
+    "name": "LEND",
+    "systemAddress": "0x20000000000000000000000000000000000000f9",
+    "evmContract": null
+  },
+  "250": {
+    "name": "CATH",
+    "systemAddress": "0x20000000000000000000000000000000000000fa",
+    "evmContract": null
+  },
+  "251": {
+    "name": "QUANT",
+    "systemAddress": "0x20000000000000000000000000000000000000fb",
+    "evmContract": "0xe443d488a8988262f35b921b36f1c8f5b2fa38e1"
+  },
+  "252": {
+    "name": "ONLYUP",
+    "systemAddress": "0x20000000000000000000000000000000000000fc",
+    "evmContract": null
+  },
+  "253": {
+    "name": "RAT",
+    "systemAddress": "0x20000000000000000000000000000000000000fd",
+    "evmContract": "0xfdc42f844f3aa19f8fc0b2d67d3276cf1efdc4ca"
+  },
+  "254": {
+    "name": "USOL",
+    "systemAddress": "0x20000000000000000000000000000000000000fe",
+    "evmContract": "0x068f321fa8fb9f0d135f290ef6a3e2813e1c8a29"
+  },
+  "255": {
+    "name": "PURRO",
+    "systemAddress": "0x20000000000000000000000000000000000000ff",
+    "evmContract": "0x713f4c66221c3920578675dfc45cfa71b5f1f307"
+  },
+  "256": {
+    "name": "KITTY",
+    "systemAddress": "0x2000000000000000000000000000000000000100",
+    "evmContract": "0x04d64b58941d8699f574fb77cb9069971a2097b8"
+  },
+  "257": {
+    "name": "TREND",
+    "systemAddress": "0x2000000000000000000000000000000000000101",
+    "evmContract": null
+  },
+  "258": {
+    "name": "COIN",
+    "systemAddress": "0x2000000000000000000000000000000000000102",
+    "evmContract": null
+  },
+  "259": {
+    "name": "STORM",
+    "systemAddress": "0x2000000000000000000000000000000000000103",
+    "evmContract": null
+  },
+  "260": {
+    "name": "RISK",
+    "systemAddress": "0x2000000000000000000000000000000000000104",
+    "evmContract": null
+  },
+  "261": {
+    "name": "PLAY",
+    "systemAddress": "0x2000000000000000000000000000000000000105",
+    "evmContract": null
+  },
+  "262": {
+    "name": "NET",
+    "systemAddress": "0x2000000000000000000000000000000000000106",
+    "evmContract": null
+  },
+  "263": {
+    "name": "LOOP",
+    "systemAddress": "0x2000000000000000000000000000000000000107",
+    "evmContract": null
+  },
+  "264": {
+    "name": "LTHREE",
+    "systemAddress": "0x2000000000000000000000000000000000000108",
+    "evmContract": "0x46777c76dbbe40fabb2aab99e33ce20058e76c59"
+  },
+  "265": {
+    "name": "WELL",
+    "systemAddress": "0x2000000000000000000000000000000000000109",
+    "evmContract": null
+  },
+  "266": {
+    "name": "WAVE",
+    "systemAddress": "0x200000000000000000000000000000000000010a",
+    "evmContract": null
+  },
+  "267": {
+    "name": "ZAP",
+    "systemAddress": "0x200000000000000000000000000000000000010b",
+    "evmContract": null
+  },
+  "268": {
+    "name": "USDT0",
+    "systemAddress": "0x200000000000000000000000000000000000010c",
+    "evmContract": "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb"
+  },
+  "269": {
+    "name": "UFART",
+    "systemAddress": "0x200000000000000000000000000000000000010d",
+    "evmContract": "0x3b4575e689ded21caad31d64c4df1f10f3b2cedf"
+  },
+  "270": {
+    "name": "BAPE",
+    "systemAddress": "0x200000000000000000000000000000000000010e",
+    "evmContract": "0xab11329560fa9c9c860bb21a9342215a1265bbb0"
+  },
+  "271": {
+    "name": "DIABLO",
+    "systemAddress": "0x200000000000000000000000000000000000010f",
+    "evmContract": null
+  },
+  "272": {
+    "name": "PENIS",
+    "systemAddress": "0x2000000000000000000000000000000000000110",
+    "evmContract": "0xf0c82d188ee54958813e7ac650e119135fc35e94"
+  },
+  "273": {
+    "name": "LBS",
+    "systemAddress": "0x2000000000000000000000000000000000000111",
+    "evmContract": null
+  },
+  "274": {
+    "name": "EBISU",
+    "systemAddress": "0x2000000000000000000000000000000000000112",
+    "evmContract": null
+  },
+  "275": {
+    "name": "DEFI",
+    "systemAddress": "0x2000000000000000000000000000000000000113",
+    "evmContract": null
+  },
+  "276": {
+    "name": "END",
+    "systemAddress": "0x2000000000000000000000000000000000000114",
+    "evmContract": null
+  },
+  "277": {
+    "name": "RUB",
+    "systemAddress": "0x2000000000000000000000000000000000000115",
+    "evmContract": "0x7dcffcb06b40344eeced2d1cbf096b299fe4b405"
+  },
+  "278": {
+    "name": "ASF",
+    "systemAddress": "0x2000000000000000000000000000000000000116",
+    "evmContract": null
+  },
+  "279": {
+    "name": "BEAT",
+    "systemAddress": "0x2000000000000000000000000000000000000117",
+    "evmContract": null
+  },
+  "280": {
+    "name": "VAL",
+    "systemAddress": "0x2000000000000000000000000000000000000118",
+    "evmContract": null
+  },
+  "281": {
+    "name": "TRADE",
+    "systemAddress": "0x2000000000000000000000000000000000000119",
+    "evmContract": null
+  },
+  "282": {
+    "name": "URBIT",
+    "systemAddress": "0x200000000000000000000000000000000000011a",
+    "evmContract": null
+  },
+  "283": {
+    "name": "TREE",
+    "systemAddress": "0x200000000000000000000000000000000000011b",
+    "evmContract": null
+  },
+  "284": {
+    "name": "FI",
+    "systemAddress": "0x200000000000000000000000000000000000011c",
+    "evmContract": null
+  },
+  "285": {
+    "name": "STAKE",
+    "systemAddress": "0x200000000000000000000000000000000000011d",
+    "evmContract": null
+  },
+  "286": {
+    "name": "NQ",
+    "systemAddress": "0x200000000000000000000000000000000000011e",
+    "evmContract": null
+  },
+  "287": {
+    "name": "BLND",
+    "systemAddress": "0x200000000000000000000000000000000000011f",
+    "evmContract": null
+  },
+  "288": {
+    "name": "WAR",
+    "systemAddress": "0x2000000000000000000000000000000000000120",
+    "evmContract": "0xe852a0a5ec22b6c0e01b7d2984f526ec55008d30"
+  },
+  "289": {
+    "name": "PERP",
+    "systemAddress": "0x2000000000000000000000000000000000000121",
+    "evmContract": "0xd2567ee20d75e8b74b44875173054365f6eb5052"
+  },
+  "290": {
+    "name": "DNDX",
+    "systemAddress": "0x2000000000000000000000000000000000000122",
+    "evmContract": null
+  },
+  "291": {
+    "name": "USDHL",
+    "systemAddress": "0x2000000000000000000000000000000000000123",
+    "evmContract": "0xb50a96253abdf803d85efcdce07ad8becbc52bd5"
+  },
+  "292": {
+    "name": "HPENGU",
+    "systemAddress": "0x2000000000000000000000000000000000000124",
+    "evmContract": "0xfa44c2634ff17cbe26dc3007d36bd61c79068c14"
+  },
+  "293": {
+    "name": "PAIR",
+    "systemAddress": "0x2000000000000000000000000000000000000125",
+    "evmContract": null
+  },
+  "294": {
+    "name": "HOLY",
+    "systemAddress": "0x2000000000000000000000000000000000000126",
+    "evmContract": null
+  },
+  "295": {
+    "name": "SING",
+    "systemAddress": "0x2000000000000000000000000000000000000127",
+    "evmContract": null
+  },
+  "296": {
+    "name": "JOFF",
+    "systemAddress": "0x2000000000000000000000000000000000000128",
+    "evmContract": null
+  },
+  "297": {
+    "name": "XAUT0",
+    "systemAddress": "0x2000000000000000000000000000000000000129",
+    "evmContract": "0xf4d9235269a96aadafc9adae454a0618ebe37949"
+  },
+  "298": {
+    "name": "HY",
+    "systemAddress": "0x200000000000000000000000000000000000012a",
+    "evmContract": null
+  },
+  "299": {
+    "name": "UPUMP",
+    "systemAddress": "0x200000000000000000000000000000000000012b",
+    "evmContract": "0x27ec642013bcb3d80ca3706599d3cda04f6f4452"
+  },
+  "300": {
+    "name": "XP",
+    "systemAddress": "0x200000000000000000000000000000000000012c",
+    "evmContract": null
+  },
+  "301": {
+    "name": "HWAVE",
+    "systemAddress": "0x200000000000000000000000000000000000012d",
+    "evmContract": "0x0e01e3afd147c7f079ea19d0eca166ad3a22e79d"
+  },
+  "302": {
+    "name": "WHLP",
+    "systemAddress": "0x200000000000000000000000000000000000012e",
+    "evmContract": null
+  },
+  "303": {
+    "name": "USDY",
+    "systemAddress": "0x200000000000000000000000000000000000012f",
+    "evmContract": null
+  },
+  "304": {
+    "name": "STLOOP",
+    "systemAddress": "0x2000000000000000000000000000000000000130",
+    "evmContract": "0x502ee789b448aa692901fe27ab03174c90f07dd1"
+  },
+  "305": {
+    "name": "HWHLP",
+    "systemAddress": "0x2000000000000000000000000000000000000131",
+    "evmContract": null
+  },
+  "306": {
+    "name": "SSR",
+    "systemAddress": "0x2000000000000000000000000000000000000132",
+    "evmContract": null
+  },
+  "307": {
+    "name": "LICKO",
+    "systemAddress": "0x2000000000000000000000000000000000000133",
+    "evmContract": null
+  },
+  "308": {
+    "name": "THLP",
+    "systemAddress": "0x2000000000000000000000000000000000000134",
+    "evmContract": null
+  },
+  "309": {
+    "name": "DUSD",
+    "systemAddress": "0x2000000000000000000000000000000000000135",
+    "evmContract": null
+  },
+  "310": {
+    "name": "HWHYPE",
+    "systemAddress": "0x2000000000000000000000000000000000000136",
+    "evmContract": null
+  },
+  "311": {
+    "name": "MONEY",
+    "systemAddress": "0x2000000000000000000000000000000000000137",
+    "evmContract": null
+  },
+  "312": {
+    "name": "USPYX",
+    "systemAddress": "0x2000000000000000000000000000000000000138",
+    "evmContract": null
+  },
+  "313": {
+    "name": "WQWQ",
+    "systemAddress": "0x2000000000000000000000000000000000000139",
+    "evmContract": null
+  },
+  "314": {
+    "name": "BLUAI",
+    "systemAddress": "0x200000000000000000000000000000000000013a",
+    "evmContract": null
+  },
+  "315": {
+    "name": "FITTED",
+    "systemAddress": "0x200000000000000000000000000000000000013b",
+    "evmContract": null
+  },
+  "316": {
+    "name": "EX",
+    "systemAddress": "0x200000000000000000000000000000000000013c",
+    "evmContract": null
+  },
+  "317": {
+    "name": "HREKT",
+    "systemAddress": "0x200000000000000000000000000000000000013d",
+    "evmContract": "0xc12e26ab94d1e62f18373cf25e43afa7b2af1cdc"
+  },
+  "318": {
+    "name": "WOULD",
+    "systemAddress": "0x200000000000000000000000000000000000013e",
+    "evmContract": "0xf855572485de4c8bc33905f58d0c21cf4df3d6c7"
+  },
+  "319": {
+    "name": "UUUSPX",
+    "systemAddress": "0x200000000000000000000000000000000000013f",
+    "evmContract": null
+  },
+  "320": {
+    "name": "UBONK",
+    "systemAddress": "0x2000000000000000000000000000000000000140",
+    "evmContract": null
+  },
+  "321": {
+    "name": "VOL",
+    "systemAddress": "0x2000000000000000000000000000000000000141",
+    "evmContract": null
+  },
+  "322": {
+    "name": "WILD",
+    "systemAddress": "0x2000000000000000000000000000000000000142",
+    "evmContract": null
+  },
+  "323": {
+    "name": "THBILL",
+    "systemAddress": "0x2000000000000000000000000000000000000143",
+    "evmContract": "0xfdd22ce6d1f66bc0ec89b20bf16ccb6670f55a5a"
+  },
+  "324": {
+    "name": "BERRIE",
+    "systemAddress": "0x2000000000000000000000000000000000000144",
+    "evmContract": null
+  },
+  "325": {
+    "name": "VSN",
+    "systemAddress": "0x2000000000000000000000000000000000000145",
+    "evmContract": "0x31185950db028ecfc70df6a35a4b552462a35773"
+  },
+  "326": {
+    "name": "UMOG",
+    "systemAddress": "0x2000000000000000000000000000000000000146",
+    "evmContract": null
+  },
+  "327": {
+    "name": "BALT",
+    "systemAddress": "0x2000000000000000000000000000000000000147",
+    "evmContract": null
+  },
+  "328": {
+    "name": "TOSHI",
+    "systemAddress": "0x2000000000000000000000000000000000000148",
+    "evmContract": null
+  },
+  "329": {
+    "name": "HUSDE",
+    "systemAddress": "0x2000000000000000000000000000000000000149",
+    "evmContract": null
+  },
+  "330": {
+    "name": "BAYC",
+    "systemAddress": "0x200000000000000000000000000000000000014a",
+    "evmContract": "0x23a5594ec077475cc466367d0b05222da206b906"
+  },
+  "331": {
+    "name": "YUMA",
+    "systemAddress": "0x200000000000000000000000000000000000014b",
+    "evmContract": null
+  },
+  "332": {
+    "name": "DBLN",
+    "systemAddress": "0x200000000000000000000000000000000000014c",
+    "evmContract": "0x5e29cb5120692a813bf166f2dd7b140b4dbf61b9"
+  },
+  "333": {
+    "name": "RYSK",
+    "systemAddress": "0x200000000000000000000000000000000000014d",
+    "evmContract": null
+  },
+  "334": {
+    "name": "AURA",
+    "systemAddress": "0x200000000000000000000000000000000000014e",
+    "evmContract": null
+  },
+  "335": {
+    "name": "KEI",
+    "systemAddress": "0x200000000000000000000000000000000000014f",
+    "evmContract": null
+  },
+  "336": {
+    "name": "BULL",
+    "systemAddress": "0x2000000000000000000000000000000000000150",
+    "evmContract": null
+  },
+  "337": {
+    "name": "DEXARI",
+    "systemAddress": "0x2000000000000000000000000000000000000151",
+    "evmContract": null
+  },
+  "338": {
+    "name": "UENA",
+    "systemAddress": "0x2000000000000000000000000000000000000152",
+    "evmContract": null
+  },
+  "339": {
+    "name": "BASED",
+    "systemAddress": "0x2000000000000000000000000000000000000153",
+    "evmContract": null
+  },
+  "340": {
+    "name": "REX",
+    "systemAddress": "0x2000000000000000000000000000000000000154",
+    "evmContract": null
+  },
+  "341": {
+    "name": "LINK0",
+    "systemAddress": "0x2000000000000000000000000000000000000155",
+    "evmContract": "0x9a12cb8869498d8826567437abea27be1c2ba9ab"
+  },
+  "342": {
+    "name": "PKMN",
+    "systemAddress": "0x2000000000000000000000000000000000000156",
+    "evmContract": null
+  },
+  "343": {
+    "name": "UXPL",
+    "systemAddress": "0x2000000000000000000000000000000000000157",
+    "evmContract": "0x33af3c2540ba72054e044efe504867b39ae421f5"
+  },
+  "344": {
+    "name": "TRX0",
+    "systemAddress": "0x2000000000000000000000000000000000000158",
+    "evmContract": null
+  },
+  "345": {
+    "name": "STRD",
+    "systemAddress": "0x2000000000000000000000000000000000000159",
+    "evmContract": null
+  },
+  "346": {
+    "name": "AAVE0",
+    "systemAddress": "0x200000000000000000000000000000000000015a",
+    "evmContract": "0xaa3871e64ca8c09fbdded327b1269224643cb83c"
+  },
+  "347": {
+    "name": "AVAX0",
+    "systemAddress": "0x200000000000000000000000000000000000015b",
+    "evmContract": "0xba63418b8e247df4b3f97aa39bef2b6804664054"
+  },
+  "348": {
+    "name": "RZR",
+    "systemAddress": "0x200000000000000000000000000000000000015c",
+    "evmContract": "0xb4444468e444f89e1c2cac2f1d3ee7e336cbd1f5"
+  },
+  "349": {
+    "name": "PEPE0",
+    "systemAddress": "0x200000000000000000000000000000000000015d",
+    "evmContract": null
+  },
+  "350": {
+    "name": "SDEX",
+    "systemAddress": "0x200000000000000000000000000000000000015e",
+    "evmContract": null
+  },
+  "351": {
+    "name": "FLR",
+    "systemAddress": "0x200000000000000000000000000000000000015f",
+    "evmContract": "0x579292c42356dd9907dfb2c25e59bbdedb5b8dc9"
+  },
+  "352": {
+    "name": "USDG",
+    "systemAddress": "0x2000000000000000000000000000000000000160",
+    "evmContract": null
+  },
+  "353": {
+    "name": "OG",
+    "systemAddress": "0x2000000000000000000000000000000000000161",
+    "evmContract": null
+  },
+  "354": {
+    "name": "RED",
+    "systemAddress": "0x2000000000000000000000000000000000000162",
+    "evmContract": null
+  },
+  "355": {
+    "name": "CASH",
+    "systemAddress": "0x2000000000000000000000000000000000000163",
+    "evmContract": null
+  },
+  "356": {
+    "name": "PUP",
+    "systemAddress": "0x2000000000000000000000000000000000000164",
+    "evmContract": "0x876e7f2f30935118a654fc0e1f807afc49efe500"
+  },
+  "357": {
+    "name": "IXRP",
+    "systemAddress": "0x2000000000000000000000000000000000000165",
+    "evmContract": null
+  },
+  "358": {
+    "name": "UWLD",
+    "systemAddress": "0x2000000000000000000000000000000000000166",
+    "evmContract": null
+  },
+  "359": {
+    "name": "NATIVE",
+    "systemAddress": "0x2000000000000000000000000000000000000167",
+    "evmContract": null
+  },
+  "360": {
+    "name": "USDH",
+    "systemAddress": "0x2000000000000000000000000000000000000168",
+    "evmContract": "0x111111a1a0667d36bd57c0a9f569b98057111111"
+  },
+  "361": {
+    "name": "UDZ",
+    "systemAddress": "0x2000000000000000000000000000000000000169",
+    "evmContract": null
+  },
+  "362": {
+    "name": "DURIAN",
+    "systemAddress": "0x200000000000000000000000000000000000016a",
+    "evmContract": null
+  },
+  "363": {
+    "name": "CRCT",
+    "systemAddress": "0x200000000000000000000000000000000000016b",
+    "evmContract": null
+  },
+  "364": {
+    "name": "UPHL",
+    "systemAddress": "0x200000000000000000000000000000000000016c",
+    "evmContract": "0x9c3bcc457862dd6d8907ba11f8c7fe7e43a8c08b"
+  },
+  "365": {
+    "name": "UDOGE",
+    "systemAddress": "0x200000000000000000000000000000000000016d",
+    "evmContract": null
+  },
+  "366": {
+    "name": "SFC",
+    "systemAddress": "0x200000000000000000000000000000000000016e",
+    "evmContract": null
+  },
+  "367": {
+    "name": "FXRP",
+    "systemAddress": "0x200000000000000000000000000000000000016f",
+    "evmContract": null
+  },
+  "368": {
+    "name": "WXRP",
+    "systemAddress": "0x2000000000000000000000000000000000000170",
+    "evmContract": null
+  },
+  "369": {
+    "name": "MHYPE",
+    "systemAddress": "0x2000000000000000000000000000000000000171",
+    "evmContract": null
+  },
+  "370": {
+    "name": "FLOW",
+    "systemAddress": "0x2000000000000000000000000000000000000172",
+    "evmContract": null
+  },
+  "371": {
+    "name": "VNTLS",
+    "systemAddress": "0x2000000000000000000000000000000000000173",
+    "evmContract": null
+  },
+  "372": {
+    "name": "TANSSI",
+    "systemAddress": "0x2000000000000000000000000000000000000174",
+    "evmContract": null
+  },
+  "373": {
+    "name": "XION",
+    "systemAddress": "0x2000000000000000000000000000000000000175",
+    "evmContract": "0x2c2333a6cb341cccf5f751dadfdae81b0b8aadb5"
+  },
+  "374": {
+    "name": "SEDA",
+    "systemAddress": "0x2000000000000000000000000000000000000176",
+    "evmContract": null
+  },
+  "375": {
+    "name": "WUSDN",
+    "systemAddress": "0x2000000000000000000000000000000000000177",
+    "evmContract": null
+  },
+  "376": {
+    "name": "IZEC",
+    "systemAddress": "0x2000000000000000000000000000000000000178",
+    "evmContract": null
+  },
+  "377": {
+    "name": "USDN",
+    "systemAddress": "0x2000000000000000000000000000000000000179",
+    "evmContract": null
+  },
+  "378": {
+    "name": "VULT",
+    "systemAddress": "0x200000000000000000000000000000000000017a",
+    "evmContract": null
+  },
+  "379": {
+    "name": "MAWARI",
+    "systemAddress": "0x200000000000000000000000000000000000017b",
+    "evmContract": null
+  },
+  "380": {
+    "name": "XDC",
+    "systemAddress": "0x200000000000000000000000000000000000017c",
+    "evmContract": null
+  },
+  "381": {
+    "name": "HBNB",
+    "systemAddress": "0x200000000000000000000000000000000000017d",
+    "evmContract": null
+  },
+  "382": {
+    "name": "NBT",
+    "systemAddress": "0x200000000000000000000000000000000000017e",
+    "evmContract": "0xf80adb0ea6fcd4f803b081b42da379dbc88abf7a"
+  },
+  "383": {
+    "name": "UMON",
+    "systemAddress": "0x200000000000000000000000000000000000017f",
+    "evmContract": null
+  },
+  "384": {
+    "name": "USDUC",
+    "systemAddress": "0x2000000000000000000000000000000000000180",
+    "evmContract": null
+  },
+  "385": {
+    "name": "SYND",
+    "systemAddress": "0x2000000000000000000000000000000000000181",
+    "evmContract": null
+  },
+  "386": {
+    "name": "PB",
+    "systemAddress": "0x2000000000000000000000000000000000000182",
+    "evmContract": null
+  },
+  "387": {
+    "name": "APEXHL",
+    "systemAddress": "0x2000000000000000000000000000000000000183",
+    "evmContract": null
+  },
+  "388": {
+    "name": "AXL",
+    "systemAddress": "0x2000000000000000000000000000000000000184",
+    "evmContract": null
+  },
+  "389": {
+    "name": "BZEC",
+    "systemAddress": "0x2000000000000000000000000000000000000185",
+    "evmContract": "0xbe068bb3c7ef5b56360655638f75bf5a6c5f8c10"
+  },
+  "390": {
+    "name": "MAK",
+    "systemAddress": "0x2000000000000000000000000000000000000186",
+    "evmContract": null
+  },
+  "391": {
+    "name": "BOUNCE",
+    "systemAddress": "0x2000000000000000000000000000000000000187",
+    "evmContract": null
+  },
+  "392": {
+    "name": "RLUSD",
+    "systemAddress": "0x2000000000000000000000000000000000000188",
+    "evmContract": null
+  },
+  "393": {
+    "name": "SOSA",
+    "systemAddress": "0x2000000000000000000000000000000000000189",
+    "evmContract": null
+  },
+  "394": {
+    "name": "HYBR",
+    "systemAddress": "0x200000000000000000000000000000000000018a",
+    "evmContract": null
+  },
+  "395": {
+    "name": "MMOVE",
+    "systemAddress": "0x200000000000000000000000000000000000018b",
+    "evmContract": null
+  }
+}

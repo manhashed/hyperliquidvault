@@ -1,0 +1,5150 @@
+[
+  {
+    "name": "USDC",
+    "hipTokenId": 0,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000000",
+    "decimals": {
+      "sz": 8,
+      "wei": 8
+    },
+    "isCanonical": true,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "PURR",
+    "hipTokenId": 1,
+    "evmContract": "0x9b498c3c8a0b8cd8ba1d9851d40d186f1872b44e",
+    "systemAddress": "0x2000000000000000000000000000000000000001",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": true,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "HFUN",
+    "hipTokenId": 2,
+    "evmContract": "0xa320d9f65ec992eff38622c63627856382db726c",
+    "systemAddress": "0x2000000000000000000000000000000000000002",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "LICK",
+    "hipTokenId": 3,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000003",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "MANLET",
+    "hipTokenId": 4,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000004",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "JEFF",
+    "hipTokenId": 5,
+    "evmContract": "0x52e444545fbe9e5972a7a371299522f7871aec1f",
+    "systemAddress": "0x2000000000000000000000000000000000000005",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "SIX",
+    "hipTokenId": 6,
+    "evmContract": "0x41de34fc45a770ebcd50200be93f080b4b05151f",
+    "systemAddress": "0x2000000000000000000000000000000000000006",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "WAGMI",
+    "hipTokenId": 7,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000007",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "CAPPY",
+    "hipTokenId": 8,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000008",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "POINTS",
+    "hipTokenId": 9,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000009",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "TRUMP",
+    "hipTokenId": 10,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000000a",
+    "decimals": {
+      "sz": 2,
+      "wei": 7
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "GMEOW",
+    "hipTokenId": 11,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000000b",
+    "decimals": {
+      "sz": 0,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "PEPE",
+    "hipTokenId": 12,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000000c",
+    "decimals": {
+      "sz": 2,
+      "wei": 7
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "XULIAN",
+    "hipTokenId": 13,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000000d",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "RUG",
+    "hipTokenId": 14,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000000e",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "ILIENS",
+    "hipTokenId": 15,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000000f",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "FUCKY",
+    "hipTokenId": 16,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000010",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "CZ",
+    "hipTokenId": 17,
+    "evmContract": "0xfdd1834677a50e61fe13e6bce49c8144e333fcbe",
+    "systemAddress": "0x2000000000000000000000000000000000000011",
+    "decimals": {
+      "sz": 2,
+      "wei": 7
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "BAGS",
+    "hipTokenId": 18,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000012",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "ANSEM",
+    "hipTokenId": 19,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000013",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "TATE",
+    "hipTokenId": 20,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000014",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "FUN",
+    "hipTokenId": 21,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000015",
+    "decimals": {
+      "sz": 1,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "SUCKY",
+    "hipTokenId": 22,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000016",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "BIGBEN",
+    "hipTokenId": 23,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000017",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "KOBE",
+    "hipTokenId": 24,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000018",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "VEGAS",
+    "hipTokenId": 25,
+    "evmContract": "0xb09158c8297acee00b900dc1f8715df46b7246a6",
+    "systemAddress": "0x2000000000000000000000000000000000000019",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "PUMP",
+    "hipTokenId": 26,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000001a",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "SCHIZO",
+    "hipTokenId": 27,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000001b",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "CATNIP",
+    "hipTokenId": 28,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000001c",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "HAPPY",
+    "hipTokenId": 29,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000001d",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "SELL",
+    "hipTokenId": 30,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000001e",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "HBOOST",
+    "hipTokenId": 31,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000001f",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "FARMED",
+    "hipTokenId": 32,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000020",
+    "decimals": {
+      "sz": 2,
+      "wei": 7
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "PURRPS",
+    "hipTokenId": 33,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000021",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "GUP",
+    "hipTokenId": 34,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000022",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "GPT",
+    "hipTokenId": 35,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000023",
+    "decimals": {
+      "sz": 2,
+      "wei": 7
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "PANDA",
+    "hipTokenId": 36,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000024",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "BID",
+    "hipTokenId": 37,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000025",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "HODL",
+    "hipTokenId": 38,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000026",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "RAGE",
+    "hipTokenId": 39,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000027",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "ASI",
+    "hipTokenId": 40,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000028",
+    "decimals": {
+      "sz": 2,
+      "wei": 7
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "LEAP",
+    "hipTokenId": 41,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000029",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "VAPOR",
+    "hipTokenId": 42,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000002a",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "PVP",
+    "hipTokenId": 43,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000002b",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "X",
+    "hipTokenId": 44,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000002c",
+    "decimals": {
+      "sz": 2,
+      "wei": 7
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "PILL",
+    "hipTokenId": 45,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000002d",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "ADHD",
+    "hipTokenId": 46,
+    "evmContract": "0xe3d5f45d97fee83b48c85e00c8359a2e07d68fee",
+    "systemAddress": "0x200000000000000000000000000000000000002e",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "LADY",
+    "hipTokenId": 47,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000002f",
+    "decimals": {
+      "sz": 2,
+      "wei": 7
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "CAT",
+    "hipTokenId": 48,
+    "evmContract": "0x04d02cb2e963b4490ee02b1925223d04f9d83fc6",
+    "systemAddress": "0x2000000000000000000000000000000000000030",
+    "decimals": {
+      "sz": 2,
+      "wei": 7
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "HPEPE",
+    "hipTokenId": 49,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000031",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "MBAPPE",
+    "hipTokenId": 50,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000032",
+    "decimals": {
+      "sz": 2,
+      "wei": 7
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "MAGA",
+    "hipTokenId": 51,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000033",
+    "decimals": {
+      "sz": 2,
+      "wei": 7
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "MOG",
+    "hipTokenId": 52,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000034",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "OMNIX",
+    "hipTokenId": 53,
+    "evmContract": "0x45ec8f63fe934c0213476cfb5870835e61dd11fa",
+    "systemAddress": "0x2000000000000000000000000000000000000035",
+    "decimals": {
+      "sz": 1,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "COKE",
+    "hipTokenId": 54,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000036",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "JEET",
+    "hipTokenId": 55,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000037",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "DROP",
+    "hipTokenId": 56,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000038",
+    "decimals": {
+      "sz": 2,
+      "wei": 7
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "CBD",
+    "hipTokenId": 57,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000039",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "ARI",
+    "hipTokenId": 58,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000003a",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "TEST",
+    "hipTokenId": 59,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000003b",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "KING",
+    "hipTokenId": 60,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000003c",
+    "decimals": {
+      "sz": 1,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "MEOW",
+    "hipTokenId": 61,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000003d",
+    "decimals": {
+      "sz": 1,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "ANT",
+    "hipTokenId": 62,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000003e",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "FRAC",
+    "hipTokenId": 63,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000003f",
+    "decimals": {
+      "sz": 1,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "ATEHUN",
+    "hipTokenId": 64,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000040",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "FRCT",
+    "hipTokenId": 65,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000041",
+    "decimals": {
+      "sz": 1,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "COZY",
+    "hipTokenId": 66,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000042",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "WASH",
+    "hipTokenId": 67,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000043",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "POP",
+    "hipTokenId": 68,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000044",
+    "decimals": {
+      "sz": 1,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "NFT",
+    "hipTokenId": 69,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000045",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "JEFE",
+    "hipTokenId": 70,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000046",
+    "decimals": {
+      "sz": 1,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "PEAR",
+    "hipTokenId": 71,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000047",
+    "decimals": {
+      "sz": 1,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "RICH",
+    "hipTokenId": 72,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000048",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "BRIDGE",
+    "hipTokenId": 73,
+    "evmContract": "0x29dbf86a8c48ea4331e28b3c1eae824a2a45996a",
+    "systemAddress": "0x2000000000000000000000000000000000000049",
+    "decimals": {
+      "sz": 2,
+      "wei": 7
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "GUESS",
+    "hipTokenId": 74,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000004a",
+    "decimals": {
+      "sz": 2,
+      "wei": 7
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "LORA",
+    "hipTokenId": 75,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000004b",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "CATBAL",
+    "hipTokenId": 76,
+    "evmContract": "0x11735dbd0b97cfa7accf47d005673ba185f7fd49",
+    "systemAddress": "0x200000000000000000000000000000000000004c",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "TJIF",
+    "hipTokenId": 77,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000004d",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "NEIRO",
+    "hipTokenId": 78,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000004e",
+    "decimals": {
+      "sz": 1,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "TIME",
+    "hipTokenId": 79,
+    "evmContract": "0x266a2491f782eb03b369760889fff8785efb3e46",
+    "systemAddress": "0x200000000000000000000000000000000000004f",
+    "decimals": {
+      "sz": 1,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "BERA",
+    "hipTokenId": 80,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000050",
+    "decimals": {
+      "sz": 1,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "ANGY",
+    "hipTokenId": 81,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000051",
+    "decimals": {
+      "sz": 0,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "DOG",
+    "hipTokenId": 82,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000052",
+    "decimals": {
+      "sz": 2,
+      "wei": 7
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "MOON",
+    "hipTokenId": 83,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000053",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "MAXI",
+    "hipTokenId": 84,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000054",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "PAIN",
+    "hipTokenId": 85,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000055",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "VDO",
+    "hipTokenId": 86,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000056",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "HQ",
+    "hipTokenId": 87,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000057",
+    "decimals": {
+      "sz": 1,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "EUR",
+    "hipTokenId": 88,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000058",
+    "decimals": {
+      "sz": 1,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "REGARD",
+    "hipTokenId": 89,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000059",
+    "decimals": {
+      "sz": 1,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "YUM",
+    "hipTokenId": 90,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000005a",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "REKT",
+    "hipTokenId": 91,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000005b",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "NMTD",
+    "hipTokenId": 92,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000005c",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "HPUMP",
+    "hipTokenId": 93,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000005d",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "PIGEON",
+    "hipTokenId": 94,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000005e",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "LAUNCH",
+    "hipTokenId": 95,
+    "evmContract": "0x4533c3002660117a56fa44ed3c4bf4b6a8e0b0a2",
+    "systemAddress": "0x200000000000000000000000000000000000005f",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "IRL",
+    "hipTokenId": 96,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000060",
+    "decimals": {
+      "sz": 1,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "RISE",
+    "hipTokenId": 97,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000061",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "WOW",
+    "hipTokenId": 98,
+    "evmContract": "0x93f12d8931e97cf41d5934bb5d302aa0e2623305",
+    "systemAddress": "0x2000000000000000000000000000000000000062",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "CINDY",
+    "hipTokenId": 99,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000063",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "CHINA",
+    "hipTokenId": 100,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000064",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "STACK",
+    "hipTokenId": 101,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000065",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "FRIED",
+    "hipTokenId": 102,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000066",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "PICKL",
+    "hipTokenId": 103,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000067",
+    "decimals": {
+      "sz": 2,
+      "wei": 7
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "SHREK",
+    "hipTokenId": 104,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000068",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "NOCEX",
+    "hipTokenId": 105,
+    "evmContract": "0x9281973406d2d347fe2ff2af7daa36464b618bbb",
+    "systemAddress": "0x2000000000000000000000000000000000000069",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "VAULT",
+    "hipTokenId": 106,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000006a",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "RANK",
+    "hipTokenId": 107,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000006b",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "L",
+    "hipTokenId": 108,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000006c",
+    "decimals": {
+      "sz": 2,
+      "wei": 7
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "H",
+    "hipTokenId": 109,
+    "evmContract": "0x78c3791ea49a7c6f41e87ba96c7d09a493febb1e",
+    "systemAddress": "0x200000000000000000000000000000000000006d",
+    "decimals": {
+      "sz": 2,
+      "wei": 7
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "G",
+    "hipTokenId": 110,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000006e",
+    "decimals": {
+      "sz": 2,
+      "wei": 7
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "SCAM",
+    "hipTokenId": 111,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000006f",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "MONAD",
+    "hipTokenId": 112,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000070",
+    "decimals": {
+      "sz": 1,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "BOZO",
+    "hipTokenId": 113,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000071",
+    "decimals": {
+      "sz": 2,
+      "wei": 7
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "RIP",
+    "hipTokenId": 114,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000072",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "UP",
+    "hipTokenId": 115,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000073",
+    "decimals": {
+      "sz": 2,
+      "wei": 7
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "GIGA",
+    "hipTokenId": 116,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000074",
+    "decimals": {
+      "sz": 2,
+      "wei": 7
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "FELIX",
+    "hipTokenId": 117,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000075",
+    "decimals": {
+      "sz": 0,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "SPH",
+    "hipTokenId": 118,
+    "evmContract": "0xd2fe47eed2d52725d9e3ae6df45593837f57c1a2",
+    "systemAddress": "0x2000000000000000000000000000000000000076",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "STHYPE",
+    "hipTokenId": 119,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000077",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "HPL",
+    "hipTokenId": 120,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000078",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "KHYPE",
+    "hipTokenId": 121,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000079",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "HOPE",
+    "hipTokenId": 122,
+    "evmContract": "0x869ac826b78bc1d9501014994196e41025b5224b",
+    "systemAddress": "0x200000000000000000000000000000000000007a",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "SHOE",
+    "hipTokenId": 123,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000007b",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "KNTQ",
+    "hipTokenId": 124,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000007c",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "BUSSY",
+    "hipTokenId": 125,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000007d",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "FATCAT",
+    "hipTokenId": 126,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000007e",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "PIP",
+    "hipTokenId": 127,
+    "evmContract": "0x1bee6762f0b522c606dc2ffb106c0bb391b2e309",
+    "systemAddress": "0x200000000000000000000000000000000000007f",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "YEETI",
+    "hipTokenId": 128,
+    "evmContract": "0x7280cc1f369ab574c35cb8a8d0885e9486e3b733",
+    "systemAddress": "0x2000000000000000000000000000000000000080",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "LQNA",
+    "hipTokenId": 129,
+    "evmContract": "0xa94676f34f6a2764c7fde5611b53834b71f228ec",
+    "systemAddress": "0x2000000000000000000000000000000000000081",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "NASDAQ",
+    "hipTokenId": 130,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000082",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "SYLVI",
+    "hipTokenId": 131,
+    "evmContract": "0x769a227178f37da50371200eb93aa71a214ca874",
+    "systemAddress": "0x2000000000000000000000000000000000000083",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "FEIT",
+    "hipTokenId": 132,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000084",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "STRICT",
+    "hipTokenId": 133,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000085",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "FRUDO",
+    "hipTokenId": 134,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000086",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "VIZN",
+    "hipTokenId": 135,
+    "evmContract": null,
+    "systemAddress": "0x2222222222222222222222222222222222222222",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "AUTIST",
+    "hipTokenId": 136,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000088",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "HGOD",
+    "hipTokenId": 137,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000089",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "LIQUID",
+    "hipTokenId": 138,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000008a",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "CHEF",
+    "hipTokenId": 139,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000008b",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "AZUR",
+    "hipTokenId": 140,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000008c",
+    "decimals": {
+      "sz": 2,
+      "wei": 7
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "EARTH",
+    "hipTokenId": 141,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000008d",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "NIGGO",
+    "hipTokenId": 142,
+    "evmContract": "0xc1631903081b19f0b7117f34192c7db48960989c",
+    "systemAddress": "0x200000000000000000000000000000000000008e",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "LUCKY",
+    "hipTokenId": 143,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000008f",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "HOP",
+    "hipTokenId": 144,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000090",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "FAN",
+    "hipTokenId": 145,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000091",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "MUNCH",
+    "hipTokenId": 146,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000092",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "COPE",
+    "hipTokenId": 147,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000093",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "HPYH",
+    "hipTokenId": 148,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000094",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "YAP",
+    "hipTokenId": 149,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000095",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "HYPE",
+    "hipTokenId": 150,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000096",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": true,
+    "hasEvmLink": false
+  },
+  {
+    "name": "STEEL",
+    "hipTokenId": 151,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000097",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "RETARD",
+    "hipTokenId": 152,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000098",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "HOLD",
+    "hipTokenId": 153,
+    "evmContract": "0x896ab745155e8c354183face6bff6270c01fb106",
+    "systemAddress": "0x2000000000000000000000000000000000000099",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "STAR",
+    "hipTokenId": 154,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000009a",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "WATAR",
+    "hipTokenId": 155,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000009b",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "GENESY",
+    "hipTokenId": 156,
+    "evmContract": "0x6f7e96c0267cd22fe04346af21f8c6ff54372939",
+    "systemAddress": "0x200000000000000000000000000000000000009c",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "SOLV",
+    "hipTokenId": 157,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000009d",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "BUBZ",
+    "hipTokenId": 158,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000009e",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "SHEEP",
+    "hipTokenId": 159,
+    "evmContract": "0x27542a8d608ee16322fae739c46e6e6ae6d2828a",
+    "systemAddress": "0x200000000000000000000000000000000000009f",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "HYFI",
+    "hipTokenId": 160,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000a0",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "FARM",
+    "hipTokenId": 161,
+    "evmContract": "0x3880c8cf09a5454dc9cb851b08c785e55504f63c",
+    "systemAddress": "0x20000000000000000000000000000000000000a1",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "FLASK",
+    "hipTokenId": 162,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000a2",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "SOVRN",
+    "hipTokenId": 163,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000a3",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "MON",
+    "hipTokenId": 164,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000a4",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "GOD",
+    "hipTokenId": 165,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000a5",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "CREAM",
+    "hipTokenId": 166,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000a6",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "ANIME",
+    "hipTokenId": 167,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000a7",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "HYENA",
+    "hipTokenId": 168,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000a8",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "ETHC",
+    "hipTokenId": 169,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000a9",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "ANZ",
+    "hipTokenId": 170,
+    "evmContract": "0xdf3dee6d24d4f369e0e290533d47ef9cf44abbdb",
+    "systemAddress": "0x20000000000000000000000000000000000000aa",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "GAME",
+    "hipTokenId": 171,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000ab",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "RIFT",
+    "hipTokenId": 172,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000ac",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "SWELL",
+    "hipTokenId": 173,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000ad",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "DEPIN",
+    "hipTokenId": 174,
+    "evmContract": "0xa085221178b4cb7e40415bca547e76e223e6d137",
+    "systemAddress": "0x20000000000000000000000000000000000000ae",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "ROUTE",
+    "hipTokenId": 175,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000af",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "BEATS",
+    "hipTokenId": 176,
+    "evmContract": "0x710a6c044d23949ba3b98ce13d762503c9708ba3",
+    "systemAddress": "0x20000000000000000000000000000000000000b0",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "ORA",
+    "hipTokenId": 177,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000b1",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "LIQD",
+    "hipTokenId": 178,
+    "evmContract": "0x1ecd15865d7f8019d546f76d095d9c93cc34edfa",
+    "systemAddress": "0x20000000000000000000000000000000000000b2",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "XBG",
+    "hipTokenId": 179,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000b3",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "HETU",
+    "hipTokenId": 180,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000b4",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "GG",
+    "hipTokenId": 181,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000b5",
+    "decimals": {
+      "sz": 0,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "WOOL",
+    "hipTokenId": 182,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000b6",
+    "decimals": {
+      "sz": 0,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "ISLAND",
+    "hipTokenId": 183,
+    "evmContract": "0x1f170f59849bf2e11a051e9da1213d672baa8748",
+    "systemAddress": "0x20000000000000000000000000000000000000b7",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "SIPHER",
+    "hipTokenId": 184,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000b8",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "DBR",
+    "hipTokenId": 185,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000b9",
+    "decimals": {
+      "sz": 1,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "SENT",
+    "hipTokenId": 186,
+    "evmContract": "0xed912f61368be50835ad7696f67d106b0cd08fe2",
+    "systemAddress": "0x20000000000000000000000000000000000000ba",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "FLY",
+    "hipTokenId": 187,
+    "evmContract": "0x3f244819a8359145a8e7cf0272955e4918a50627",
+    "systemAddress": "0x20000000000000000000000000000000000000bb",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "SSS",
+    "hipTokenId": 188,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000bc",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "HWTR",
+    "hipTokenId": 189,
+    "evmContract": "0x5804bf271d9e691611eea1267b24c1f3d0723639",
+    "systemAddress": "0x20000000000000000000000000000000000000bd",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "NEKO",
+    "hipTokenId": 190,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000be",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "UNIT",
+    "hipTokenId": 191,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000bf",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "PEG",
+    "hipTokenId": 192,
+    "evmContract": "0x28245ab01298eaef7933bc90d35bd9dbca5c89db",
+    "systemAddress": "0x20000000000000000000000000000000000000c0",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "NEURAL",
+    "hipTokenId": 193,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000c1",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "PIE",
+    "hipTokenId": 194,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000c2",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "DRIVE",
+    "hipTokenId": 195,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000c3",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "JPEG",
+    "hipTokenId": 196,
+    "evmContract": "0xc11579f984d07af75b0164ac458583a0d39d619a",
+    "systemAddress": "0x20000000000000000000000000000000000000c4",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "UBTC",
+    "hipTokenId": 197,
+    "evmContract": "0x9fdbda0a5e284c32744d2f17ee5c74b284993463",
+    "systemAddress": "0x20000000000000000000000000000000000000c5",
+    "decimals": {
+      "sz": 5,
+      "wei": 10
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "TGE",
+    "hipTokenId": 198,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000c6",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "HEAD",
+    "hipTokenId": 199,
+    "evmContract": "0xa0999b04c23e8b73961a97b463067d9bea5b953c",
+    "systemAddress": "0x20000000000000000000000000000000000000c7",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "EDGE",
+    "hipTokenId": 200,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000c8",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "GEN",
+    "hipTokenId": 201,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000c9",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "PRFI",
+    "hipTokenId": 202,
+    "evmContract": "0x7bbcf1b600565ae023a1806ef637af4739de3255",
+    "systemAddress": "0x20000000000000000000000000000000000000ca",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "REI",
+    "hipTokenId": 203,
+    "evmContract": "0xa4907f0e6bf36341516ba3d9d2524ea92f521e65",
+    "systemAddress": "0x20000000000000000000000000000000000000cb",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "VORTX",
+    "hipTokenId": 204,
+    "evmContract": "0xc12b4dd5268322ddbe3d6f65ebb1ce37a9951315",
+    "systemAddress": "0x20000000000000000000000000000000000000cc",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "HAR",
+    "hipTokenId": 205,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000cd",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "DEFIN",
+    "hipTokenId": 206,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000ce",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "APU",
+    "hipTokenId": 207,
+    "evmContract": "0xcbb8e1a8d5f9ee59c5a331f6c8556cca8e01cf10",
+    "systemAddress": "0x20000000000000000000000000000000000000cf",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "MOCA",
+    "hipTokenId": 208,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000d0",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "TILT",
+    "hipTokenId": 209,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000d1",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "SPR",
+    "hipTokenId": 210,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000d2",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "HIPPO",
+    "hipTokenId": 211,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000d3",
+    "decimals": {
+      "sz": 1,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "HANA",
+    "hipTokenId": 212,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000d4",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "SWAP",
+    "hipTokenId": 213,
+    "evmContract": "0x03832767bdf9a8ef007449942125ad605acfadb8",
+    "systemAddress": "0x20000000000000000000000000000000000000d5",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "MORE",
+    "hipTokenId": 214,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000d6",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "LOOT",
+    "hipTokenId": 215,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000d7",
+    "decimals": {
+      "sz": 0,
+      "wei": 7
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "LUMI",
+    "hipTokenId": 216,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000d8",
+    "decimals": {
+      "sz": 0,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "WHYPI",
+    "hipTokenId": 217,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000d9",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "ANON",
+    "hipTokenId": 218,
+    "evmContract": "0x79bbf4508b1391af3a0f4b30bb5fc4aa9ab0e07c",
+    "systemAddress": "0x20000000000000000000000000000000000000da",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "OTTI",
+    "hipTokenId": 219,
+    "evmContract": "0xe45b3fc1f0032532e3d8a3c141cd258bd3eed368",
+    "systemAddress": "0x20000000000000000000000000000000000000db",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "HORSY",
+    "hipTokenId": 220,
+    "evmContract": "0xd918e114a473ebb3c7688d9a7373838582cb0539",
+    "systemAddress": "0x20000000000000000000000000000000000000dc",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "UETH",
+    "hipTokenId": 221,
+    "evmContract": "0xbe6727b535545c67d5caa73dea54865b92cf7907",
+    "systemAddress": "0x20000000000000000000000000000000000000dd",
+    "decimals": {
+      "sz": 4,
+      "wei": 9
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "BUDDY",
+    "hipTokenId": 222,
+    "evmContract": "0x47bb061c0204af921f43dc73c7d7768d2672ddee",
+    "systemAddress": "0x20000000000000000000000000000000000000de",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "LATINA",
+    "hipTokenId": 223,
+    "evmContract": "0xe7eaa46c2ac8470d622ada1538fede6242cebe53",
+    "systemAddress": "0x20000000000000000000000000000000000000df",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "WLFI",
+    "hipTokenId": 224,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000e0",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "AIR",
+    "hipTokenId": 225,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000e1",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "K",
+    "hipTokenId": 226,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000e2",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "PLUME",
+    "hipTokenId": 227,
+    "evmContract": "0xcc0f1a2a451fb7bb0c97602e890ef0fe8b6b2e15",
+    "systemAddress": "0x20000000000000000000000000000000000000e3",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "LIM",
+    "hipTokenId": 228,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000e4",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "HUSD",
+    "hipTokenId": 229,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000e5",
+    "decimals": {
+      "sz": 1,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "DHYPE",
+    "hipTokenId": 230,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000e6",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "EDA",
+    "hipTokenId": 231,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000e7",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "FUND",
+    "hipTokenId": 232,
+    "evmContract": "0x89b0fe193887d731a2b48a5d87a1185214482ad5",
+    "systemAddress": "0x20000000000000000000000000000000000000e8",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "EXP",
+    "hipTokenId": 233,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000e9",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "SENTI",
+    "hipTokenId": 234,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000ea",
+    "decimals": {
+      "sz": 1,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "USDE",
+    "hipTokenId": 235,
+    "evmContract": "0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34",
+    "systemAddress": "0x20000000000000000000000000000000000000eb",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "HIP",
+    "hipTokenId": 236,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000ec",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "SLAY",
+    "hipTokenId": 237,
+    "evmContract": "0x9efdfc72c1bc90b36f8aae35247e62310c58eacf",
+    "systemAddress": "0x20000000000000000000000000000000000000ed",
+    "decimals": {
+      "sz": 1,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "B",
+    "hipTokenId": 238,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000ee",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "USDXL",
+    "hipTokenId": 239,
+    "evmContract": "0xca79db4b49f608ef54a5cb813fbed3a6387bc645",
+    "systemAddress": "0x20000000000000000000000000000000000000ef",
+    "decimals": {
+      "sz": 2,
+      "wei": 7
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "USH",
+    "hipTokenId": 240,
+    "evmContract": "0x8ff0dd9f9c40a0d76ef1bcfaf5f98c1610c74bd8",
+    "systemAddress": "0x20000000000000000000000000000000000000f0",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "FEUSD",
+    "hipTokenId": 241,
+    "evmContract": "0x02c6a2fa58cc01a18b8d9e00ea48d65e4df26c70",
+    "systemAddress": "0x20000000000000000000000000000000000000f1",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "COOK",
+    "hipTokenId": 242,
+    "evmContract": "0x9f0c013016e8656bc256f948cd4b79ab25c7b94d",
+    "systemAddress": "0x20000000000000000000000000000000000000f2",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "OKI",
+    "hipTokenId": 243,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000f3",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "BORG",
+    "hipTokenId": 244,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000f4",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "SIGN",
+    "hipTokenId": 245,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000f5",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "WMNT",
+    "hipTokenId": 246,
+    "evmContract": "0x36721e62edea413dc5195c4ca9c5a7eb175feb6b",
+    "systemAddress": "0x20000000000000000000000000000000000000f6",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "KITTEN",
+    "hipTokenId": 247,
+    "evmContract": "0x618275f8efe54c2afa87bfb9f210a52f0ff89364",
+    "systemAddress": "0x20000000000000000000000000000000000000f7",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "USR",
+    "hipTokenId": 248,
+    "evmContract": "0x0ad339d66bf4aed5ce31c64bc37b3244b6394a77",
+    "systemAddress": "0x20000000000000000000000000000000000000f8",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "LEND",
+    "hipTokenId": 249,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000f9",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "CATH",
+    "hipTokenId": 250,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000fa",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "QUANT",
+    "hipTokenId": 251,
+    "evmContract": "0xe443d488a8988262f35b921b36f1c8f5b2fa38e1",
+    "systemAddress": "0x20000000000000000000000000000000000000fb",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "ONLYUP",
+    "hipTokenId": 252,
+    "evmContract": null,
+    "systemAddress": "0x20000000000000000000000000000000000000fc",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "RAT",
+    "hipTokenId": 253,
+    "evmContract": "0xfdc42f844f3aa19f8fc0b2d67d3276cf1efdc4ca",
+    "systemAddress": "0x20000000000000000000000000000000000000fd",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "USOL",
+    "hipTokenId": 254,
+    "evmContract": "0x068f321fa8fb9f0d135f290ef6a3e2813e1c8a29",
+    "systemAddress": "0x20000000000000000000000000000000000000fe",
+    "decimals": {
+      "sz": 3,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "PURRO",
+    "hipTokenId": 255,
+    "evmContract": "0x713f4c66221c3920578675dfc45cfa71b5f1f307",
+    "systemAddress": "0x20000000000000000000000000000000000000ff",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "KITTY",
+    "hipTokenId": 256,
+    "evmContract": "0x04d64b58941d8699f574fb77cb9069971a2097b8",
+    "systemAddress": "0x2000000000000000000000000000000000000100",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "TREND",
+    "hipTokenId": 257,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000101",
+    "decimals": {
+      "sz": 2,
+      "wei": 7
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "COIN",
+    "hipTokenId": 258,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000102",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "STORM",
+    "hipTokenId": 259,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000103",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "RISK",
+    "hipTokenId": 260,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000104",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "PLAY",
+    "hipTokenId": 261,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000105",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "NET",
+    "hipTokenId": 262,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000106",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "LOOP",
+    "hipTokenId": 263,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000107",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "LTHREE",
+    "hipTokenId": 264,
+    "evmContract": "0x46777c76dbbe40fabb2aab99e33ce20058e76c59",
+    "systemAddress": "0x2000000000000000000000000000000000000108",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "WELL",
+    "hipTokenId": 265,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000109",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "WAVE",
+    "hipTokenId": 266,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000010a",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "ZAP",
+    "hipTokenId": 267,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000010b",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "USDT0",
+    "hipTokenId": 268,
+    "evmContract": "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
+    "systemAddress": "0x200000000000000000000000000000000000010c",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "UFART",
+    "hipTokenId": 269,
+    "evmContract": "0x3b4575e689ded21caad31d64c4df1f10f3b2cedf",
+    "systemAddress": "0x200000000000000000000000000000000000010d",
+    "decimals": {
+      "sz": 1,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "BAPE",
+    "hipTokenId": 270,
+    "evmContract": "0xab11329560fa9c9c860bb21a9342215a1265bbb0",
+    "systemAddress": "0x200000000000000000000000000000000000010e",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "DIABLO",
+    "hipTokenId": 271,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000010f",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "PENIS",
+    "hipTokenId": 272,
+    "evmContract": "0xf0c82d188ee54958813e7ac650e119135fc35e94",
+    "systemAddress": "0x2000000000000000000000000000000000000110",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "LBS",
+    "hipTokenId": 273,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000111",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "EBISU",
+    "hipTokenId": 274,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000112",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "DEFI",
+    "hipTokenId": 275,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000113",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "END",
+    "hipTokenId": 276,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000114",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "RUB",
+    "hipTokenId": 277,
+    "evmContract": "0x7dcffcb06b40344eeced2d1cbf096b299fe4b405",
+    "systemAddress": "0x2000000000000000000000000000000000000115",
+    "decimals": {
+      "sz": 5,
+      "wei": 10
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "ASF",
+    "hipTokenId": 278,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000116",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "BEAT",
+    "hipTokenId": 279,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000117",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "VAL",
+    "hipTokenId": 280,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000118",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "TRADE",
+    "hipTokenId": 281,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000119",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "URBIT",
+    "hipTokenId": 282,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000011a",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "TREE",
+    "hipTokenId": 283,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000011b",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "FI",
+    "hipTokenId": 284,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000011c",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "STAKE",
+    "hipTokenId": 285,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000011d",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "NQ",
+    "hipTokenId": 286,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000011e",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "BLND",
+    "hipTokenId": 287,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000011f",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "WAR",
+    "hipTokenId": 288,
+    "evmContract": "0xe852a0a5ec22b6c0e01b7d2984f526ec55008d30",
+    "systemAddress": "0x2000000000000000000000000000000000000120",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "PERP",
+    "hipTokenId": 289,
+    "evmContract": "0xd2567ee20d75e8b74b44875173054365f6eb5052",
+    "systemAddress": "0x2000000000000000000000000000000000000121",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "DNDX",
+    "hipTokenId": 290,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000122",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "USDHL",
+    "hipTokenId": 291,
+    "evmContract": "0xb50a96253abdf803d85efcdce07ad8becbc52bd5",
+    "systemAddress": "0x2000000000000000000000000000000000000123",
+    "decimals": {
+      "sz": 2,
+      "wei": 7
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "HPENGU",
+    "hipTokenId": 292,
+    "evmContract": "0xfa44c2634ff17cbe26dc3007d36bd61c79068c14",
+    "systemAddress": "0x2000000000000000000000000000000000000124",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "PAIR",
+    "hipTokenId": 293,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000125",
+    "decimals": {
+      "sz": 2,
+      "wei": 7
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "HOLY",
+    "hipTokenId": 294,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000126",
+    "decimals": {
+      "sz": 2,
+      "wei": 7
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "SING",
+    "hipTokenId": 295,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000127",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "JOFF",
+    "hipTokenId": 296,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000128",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "XAUT0",
+    "hipTokenId": 297,
+    "evmContract": "0xf4d9235269a96aadafc9adae454a0618ebe37949",
+    "systemAddress": "0x2000000000000000000000000000000000000129",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "HY",
+    "hipTokenId": 298,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000012a",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "UPUMP",
+    "hipTokenId": 299,
+    "evmContract": "0x27ec642013bcb3d80ca3706599d3cda04f6f4452",
+    "systemAddress": "0x200000000000000000000000000000000000012b",
+    "decimals": {
+      "sz": 0,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "XP",
+    "hipTokenId": 300,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000012c",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "HWAVE",
+    "hipTokenId": 301,
+    "evmContract": "0x0e01e3afd147c7f079ea19d0eca166ad3a22e79d",
+    "systemAddress": "0x200000000000000000000000000000000000012d",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "WHLP",
+    "hipTokenId": 302,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000012e",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "USDY",
+    "hipTokenId": 303,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000012f",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "STLOOP",
+    "hipTokenId": 304,
+    "evmContract": "0x502ee789b448aa692901fe27ab03174c90f07dd1",
+    "systemAddress": "0x2000000000000000000000000000000000000130",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "HWHLP",
+    "hipTokenId": 305,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000131",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "SSR",
+    "hipTokenId": 306,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000132",
+    "decimals": {
+      "sz": 1,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "LICKO",
+    "hipTokenId": 307,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000133",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "THLP",
+    "hipTokenId": 308,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000134",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "DUSD",
+    "hipTokenId": 309,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000135",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "HWHYPE",
+    "hipTokenId": 310,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000136",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "MONEY",
+    "hipTokenId": 311,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000137",
+    "decimals": {
+      "sz": 2,
+      "wei": 7
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "USPYX",
+    "hipTokenId": 312,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000138",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "WQWQ",
+    "hipTokenId": 313,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000139",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "BLUAI",
+    "hipTokenId": 314,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000013a",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "FITTED",
+    "hipTokenId": 315,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000013b",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "EX",
+    "hipTokenId": 316,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000013c",
+    "decimals": {
+      "sz": 1,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "HREKT",
+    "hipTokenId": 317,
+    "evmContract": "0xc12e26ab94d1e62f18373cf25e43afa7b2af1cdc",
+    "systemAddress": "0x200000000000000000000000000000000000013d",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "WOULD",
+    "hipTokenId": 318,
+    "evmContract": "0xf855572485de4c8bc33905f58d0c21cf4df3d6c7",
+    "systemAddress": "0x200000000000000000000000000000000000013e",
+    "decimals": {
+      "sz": 1,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "UUUSPX",
+    "hipTokenId": 319,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000013f",
+    "decimals": {
+      "sz": 1,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "UBONK",
+    "hipTokenId": 320,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000140",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "VOL",
+    "hipTokenId": 321,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000141",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "WILD",
+    "hipTokenId": 322,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000142",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "THBILL",
+    "hipTokenId": 323,
+    "evmContract": "0xfdd22ce6d1f66bc0ec89b20bf16ccb6670f55a5a",
+    "systemAddress": "0x2000000000000000000000000000000000000143",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "BERRIE",
+    "hipTokenId": 324,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000144",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "VSN",
+    "hipTokenId": 325,
+    "evmContract": "0x31185950db028ecfc70df6a35a4b552462a35773",
+    "systemAddress": "0x2000000000000000000000000000000000000145",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "UMOG",
+    "hipTokenId": 326,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000146",
+    "decimals": {
+      "sz": 1,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "BALT",
+    "hipTokenId": 327,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000147",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "TOSHI",
+    "hipTokenId": 328,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000148",
+    "decimals": {
+      "sz": 0,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "HUSDE",
+    "hipTokenId": 329,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000149",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "BAYC",
+    "hipTokenId": 330,
+    "evmContract": "0x23a5594ec077475cc466367d0b05222da206b906",
+    "systemAddress": "0x200000000000000000000000000000000000014a",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "YUMA",
+    "hipTokenId": 331,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000014b",
+    "decimals": {
+      "sz": 1,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "DBLN",
+    "hipTokenId": 332,
+    "evmContract": "0x5e29cb5120692a813bf166f2dd7b140b4dbf61b9",
+    "systemAddress": "0x200000000000000000000000000000000000014c",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "RYSK",
+    "hipTokenId": 333,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000014d",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "AURA",
+    "hipTokenId": 334,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000014e",
+    "decimals": {
+      "sz": 1,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "KEI",
+    "hipTokenId": 335,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000014f",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "BULL",
+    "hipTokenId": 336,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000150",
+    "decimals": {
+      "sz": 1,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "DEXARI",
+    "hipTokenId": 337,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000151",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "UENA",
+    "hipTokenId": 338,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000152",
+    "decimals": {
+      "sz": 1,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "BASED",
+    "hipTokenId": 339,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000153",
+    "decimals": {
+      "sz": 1,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "REX",
+    "hipTokenId": 340,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000154",
+    "decimals": {
+      "sz": 1,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "LINK0",
+    "hipTokenId": 341,
+    "evmContract": "0x9a12cb8869498d8826567437abea27be1c2ba9ab",
+    "systemAddress": "0x2000000000000000000000000000000000000155",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "PKMN",
+    "hipTokenId": 342,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000156",
+    "decimals": {
+      "sz": 5,
+      "wei": 10
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "UXPL",
+    "hipTokenId": 343,
+    "evmContract": "0x33af3c2540ba72054e044efe504867b39ae421f5",
+    "systemAddress": "0x2000000000000000000000000000000000000157",
+    "decimals": {
+      "sz": 1,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "TRX0",
+    "hipTokenId": 344,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000158",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "STRD",
+    "hipTokenId": 345,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000159",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "AAVE0",
+    "hipTokenId": 346,
+    "evmContract": "0xaa3871e64ca8c09fbdded327b1269224643cb83c",
+    "systemAddress": "0x200000000000000000000000000000000000015a",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "AVAX0",
+    "hipTokenId": 347,
+    "evmContract": "0xba63418b8e247df4b3f97aa39bef2b6804664054",
+    "systemAddress": "0x200000000000000000000000000000000000015b",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "RZR",
+    "hipTokenId": 348,
+    "evmContract": "0xb4444468e444f89e1c2cac2f1d3ee7e336cbd1f5",
+    "systemAddress": "0x200000000000000000000000000000000000015c",
+    "decimals": {
+      "sz": 2,
+      "wei": 7
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "PEPE0",
+    "hipTokenId": 349,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000015d",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "SDEX",
+    "hipTokenId": 350,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000015e",
+    "decimals": {
+      "sz": 0,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "FLR",
+    "hipTokenId": 351,
+    "evmContract": "0x579292c42356dd9907dfb2c25e59bbdedb5b8dc9",
+    "systemAddress": "0x200000000000000000000000000000000000015f",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "USDG",
+    "hipTokenId": 352,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000160",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "OG",
+    "hipTokenId": 353,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000161",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "RED",
+    "hipTokenId": 354,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000162",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "CASH",
+    "hipTokenId": 355,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000163",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "PUP",
+    "hipTokenId": 356,
+    "evmContract": "0x876e7f2f30935118a654fc0e1f807afc49efe500",
+    "systemAddress": "0x2000000000000000000000000000000000000164",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "IXRP",
+    "hipTokenId": 357,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000165",
+    "decimals": {
+      "sz": 2,
+      "wei": 7
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "UWLD",
+    "hipTokenId": 358,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000166",
+    "decimals": {
+      "sz": 1,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "NATIVE",
+    "hipTokenId": 359,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000167",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "USDH",
+    "hipTokenId": 360,
+    "evmContract": "0x111111a1a0667d36bd57c0a9f569b98057111111",
+    "systemAddress": "0x2000000000000000000000000000000000000168",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "UDZ",
+    "hipTokenId": 361,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000169",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "DURIAN",
+    "hipTokenId": 362,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000016a",
+    "decimals": {
+      "sz": 0,
+      "wei": 5
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "CRCT",
+    "hipTokenId": 363,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000016b",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "UPHL",
+    "hipTokenId": 364,
+    "evmContract": "0x9c3bcc457862dd6d8907ba11f8c7fe7e43a8c08b",
+    "systemAddress": "0x200000000000000000000000000000000000016c",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "UDOGE",
+    "hipTokenId": 365,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000016d",
+    "decimals": {
+      "sz": 2,
+      "wei": 9
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "SFC",
+    "hipTokenId": 366,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000016e",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "FXRP",
+    "hipTokenId": 367,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000016f",
+    "decimals": {
+      "sz": 1,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "WXRP",
+    "hipTokenId": 368,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000170",
+    "decimals": {
+      "sz": 1,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "MHYPE",
+    "hipTokenId": 369,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000171",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "FLOW",
+    "hipTokenId": 370,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000172",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "VNTLS",
+    "hipTokenId": 371,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000173",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "TANSSI",
+    "hipTokenId": 372,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000174",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "XION",
+    "hipTokenId": 373,
+    "evmContract": "0x2c2333a6cb341cccf5f751dadfdae81b0b8aadb5",
+    "systemAddress": "0x2000000000000000000000000000000000000175",
+    "decimals": {
+      "sz": 1,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "SEDA",
+    "hipTokenId": 374,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000176",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "WUSDN",
+    "hipTokenId": 375,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000177",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "IZEC",
+    "hipTokenId": 376,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000178",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "USDN",
+    "hipTokenId": 377,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000179",
+    "decimals": {
+      "sz": 1,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "VULT",
+    "hipTokenId": 378,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000017a",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "MAWARI",
+    "hipTokenId": 379,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000017b",
+    "decimals": {
+      "sz": 2,
+      "wei": 7
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "XDC",
+    "hipTokenId": 380,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000017c",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "HBNB",
+    "hipTokenId": 381,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000017d",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "NBT",
+    "hipTokenId": 382,
+    "evmContract": "0xf80adb0ea6fcd4f803b081b42da379dbc88abf7a",
+    "systemAddress": "0x200000000000000000000000000000000000017e",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "UMON",
+    "hipTokenId": 383,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000017f",
+    "decimals": {
+      "sz": 1,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "USDUC",
+    "hipTokenId": 384,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000180",
+    "decimals": {
+      "sz": 1,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "SYND",
+    "hipTokenId": 385,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000181",
+    "decimals": {
+      "sz": 1,
+      "wei": 6
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "PB",
+    "hipTokenId": 386,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000182",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "APEXHL",
+    "hipTokenId": 387,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000183",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "AXL",
+    "hipTokenId": 388,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000184",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "BZEC",
+    "hipTokenId": 389,
+    "evmContract": "0xbe068bb3c7ef5b56360655638f75bf5a6c5f8c10",
+    "systemAddress": "0x2000000000000000000000000000000000000185",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": true
+  },
+  {
+    "name": "MAK",
+    "hipTokenId": 390,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000186",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "BOUNCE",
+    "hipTokenId": 391,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000187",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "RLUSD",
+    "hipTokenId": 392,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000188",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "SOSA",
+    "hipTokenId": 393,
+    "evmContract": null,
+    "systemAddress": "0x2000000000000000000000000000000000000189",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "HYBR",
+    "hipTokenId": 394,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000018a",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  },
+  {
+    "name": "MMOVE",
+    "hipTokenId": 395,
+    "evmContract": null,
+    "systemAddress": "0x200000000000000000000000000000000000018b",
+    "decimals": {
+      "sz": 2,
+      "wei": 8
+    },
+    "isCanonical": false,
+    "isNative": false,
+    "hasEvmLink": false
+  }
+]

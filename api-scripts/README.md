@@ -122,7 +122,34 @@ node api-scripts/getLinkedAssets.js
 - Separates native tokens (HYPE), EVM-linked, and Hip-1 only tokens
 - Includes system address calculation reference
 
-### 7. `getAllData.js`
+### 7. `exportLinkedAssets.js` ⭐
+**Export all assets to JSON files:**
+- Fetches from both testnet and mainnet
+- Exports to `data/assets/` folder
+- Creates 7 different JSON files for various use cases
+- Includes simple arrays, categorized data, and quick lookup mappings
+
+**Usage:**
+```bash
+node api-scripts/exportLinkedAssets.js
+```
+
+**Generated Files:**
+- `testnet-assets.json` - Full testnet data (1,470 tokens)
+- `testnet-assets-simple.json` - Token array only
+- `testnet-token-mapping.json` - Quick ID→address lookup
+- `mainnet-assets.json` - Full mainnet data (396 tokens)
+- `mainnet-assets-simple.json` - Token array only
+- `mainnet-token-mapping.json` - Quick ID→address lookup
+- `all-networks-assets.json` - Combined networks
+
+**Perfect for:**
+- Building applications with token data
+- Offline token lookups
+- Testing and development
+- Analytics and research
+
+### 8. `getAllData.js`
 Fetches everything in one go:
 - Runs all the above scripts sequentially
 - Provides comprehensive summary
