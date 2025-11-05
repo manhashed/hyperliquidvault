@@ -83,28 +83,45 @@ async function getVaultData(address) {
         console.log("💰 SPOT BALANCES");
         console.log("─────────────────────────────────────────────────────────────");
         
-        if (data.withdrawable && parseFloat(data.withdrawable) > 0) {
-            console.log(`Withdrawable USD:     $${parseFloat(data.withdrawable).toFixed(6)}`);
-        }
+        // Fetch spot balances separately
+        const spotResponse = await fetch(API_ENDPOINT, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                type: "spotClearinghouseState",
+                user: address
+            }),
+        });
 
-        // Cross margin account value includes spot
-        if (data.crossMarginSummary) {
-            console.log(`Cross Margin Value:   $${parseFloat(data.crossMarginSummary.accountValue).toFixed(2)}`);
-        }
-
-        // Check for specific spot balances in assetPositions
-        if (data.assetPositions) {
-            const spotBalances = data.assetPositions.filter(pos => pos.type === 'spot');
-            if (spotBalances.length > 0) {
-                console.log("\nSpot Token Balances:");
-                spotBalances.forEach(spot => {
-                    console.log(`  ${spot.position.coin}: ${spot.position.szi}`);
+        if (spotResponse.ok) {
+            const spotData = await spotResponse.json();
+            
+            if (spotData && spotData.balances && spotData.balances.length > 0) {
+                console.log("\nToken Balances:");
+                spotData.balances.forEach(balance => {
+                    const hold = parseFloat(balance.hold || 0);
+                    const total = parseFloat(balance.total || 0);
+                    const available = total - hold;
+                    
+                    console.log(`\n  ${balance.coin}:`);
+                    console.log(`    Total:      ${total.toFixed(6)}`);
+                    console.log(`    Available:  ${available.toFixed(6)}`);
+                    if (hold > 0) {
+                        console.log(`    Hold:       ${hold.toFixed(6)}`);
+                    }
                 });
+            } else {
+                console.log("No spot token balances");
             }
+        } else {
+            console.log("Could not fetch spot balances");
         }
 
-        if (!data.withdrawable || parseFloat(data.withdrawable) === 0) {
-            console.log("No spot balances available");
+        // Also show perp withdrawable for comparison
+        if (data.withdrawable && parseFloat(data.withdrawable) > 0) {
+            console.log(`\nPerp Withdrawable:    $${parseFloat(data.withdrawable).toFixed(6)}`);
         }
         console.log("");
 
