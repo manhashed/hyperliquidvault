@@ -103,7 +103,26 @@ Fetches market information:
 node api-scripts/getMarketData.js
 ```
 
-### 6. `getAllData.js`
+### 6. `getLinkedAssets.js`
+**Fetch all Hip-1 and EVM-linked assets:**
+- Hip-1 token IDs
+- EVM contract addresses  
+- System addresses for deposits/withdrawals
+- Token decimals and metadata
+- Canonical (Genesis) token status
+
+**Usage:**
+```bash
+node api-scripts/getLinkedAssets.js
+```
+
+**Features:**
+- Shows all tokens with EVM contracts (121+ tokens)
+- Displays system address for each token (for HyperCore transfers)
+- Separates native tokens (HYPE), EVM-linked, and Hip-1 only tokens
+- Includes system address calculation reference
+
+### 7. `getAllData.js`
 Fetches everything in one go:
 - Runs all the above scripts sequentially
 - Provides comprehensive summary
