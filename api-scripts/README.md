@@ -4,6 +4,45 @@ Standalone Node.js scripts to fetch data from Hyperliquid testnet. These scripts
 
 ## Available Scripts
 
+### ⭐ `getVaultData.js` (Recommended)
+**Comprehensive vault data fetcher** - Gets everything in one beautifully formatted report:
+- Account summary (value, margin, withdrawable)
+- All perpetual positions with PnL
+- Spot balances
+- Open orders
+- Recent fills (last 5)
+- Recent funding payments (last 5)
+- Vault statistics and leverage
+
+**Usage:**
+```bash
+node api-scripts/getVaultData.js
+# or with custom address
+node api-scripts/getVaultData.js 0xYourAddress
+# or with environment variable
+VAULT_ADDRESS=0xYourAddress node api-scripts/getVaultData.js
+```
+
+**Output Example:**
+```
+═══════════════════════════════════════════════════════════════
+           HYPERLIQUID VAULT COMPREHENSIVE DATA
+═══════════════════════════════════════════════════════════════
+Vault Address: 0xB6b9Db33FCdDC4c2FCCfc049D72aF5D0766A26e6
+
+📊 ACCOUNT SUMMARY
+Account Value:        $30.00
+Withdrawable:         $30.00
+
+📈 PERPETUAL POSITIONS
+No open perp positions
+
+💰 SPOT BALANCES
+Withdrawable USD:     $30.000000
+```
+
+---
+
 ### 1. `getAccountState.js`
 Fetches comprehensive account information including:
 - Account value and margin
@@ -66,13 +105,15 @@ node api-scripts/getMarketData.js
 
 ### 6. `getAllData.js`
 Fetches everything in one go:
-- Runs all the above scripts
+- Runs all the above scripts sequentially
 - Provides comprehensive summary
 
 **Usage:**
 ```bash
 node api-scripts/getAllData.js
 ```
+
+**Note:** For a single, well-formatted comprehensive report, use `getVaultData.js` instead.
 
 ## Configuration
 
