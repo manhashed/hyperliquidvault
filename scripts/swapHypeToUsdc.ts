@@ -23,11 +23,11 @@ async function main() {
   // ═══════════════════════════════════════════════════════════════════
   const config: SwapConfig = {
     name: "HYPE → USDC Swap",
-    assetId: 1105,                    // HYPE spot asset ID
-    amountHype: 0.5,                  // Amount of HYPE to sell
-    limitPrice: 20,                   // Minimum USDC per HYPE (set conservatively low)
+    assetId: 135,                    // HYPE spot asset ID
+    amountHype: 0.01,                  // Amount of HYPE to sell
+    limitPrice: 85,                   // Minimum USDC per HYPE (set conservatively low)
     tif: 3,                           // IOC - Immediate or Cancel
-    slippageTolerance: 5              // 5% slippage tolerance
+    slippageTolerance: 10              // 10% slippage tolerance
   };
 
   console.log("═══════════════════════════════════════════════════════════════");
@@ -71,7 +71,8 @@ async function main() {
     case 3: tifValue = 2; break;  // GTC
     default: tifValue = 1;        // IOC default
   }
-  const encodedTif = new Uint8Array([tifValue]);
+  // Convert to hex string for bytes1 encoding
+  const encodedTif = ethers.hexlify(new Uint8Array([tifValue]));
   
   const cloid = 0n;  // Client order ID (0 for auto-generated)
 

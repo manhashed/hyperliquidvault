@@ -74,7 +74,8 @@ async function main() {
     case 3: tifValue = 2; break;  // GTC
     default: tifValue = 1;        // IOC default
   }
-  const encodedTif = new Uint8Array([tifValue]);
+  // Convert to hex string for bytes1 encoding
+  const encodedTif = ethers.hexlify(new Uint8Array([tifValue]));
   
   const cloid = 0n;  // Client order ID (0 for auto-generated)
 
