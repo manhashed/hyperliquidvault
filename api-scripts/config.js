@@ -3,10 +3,9 @@
  * Supports both testnet and mainnet
  */
 
-// Network selection - Change this to switch between networks
+// Network selection - Reads from HYPERLIQUID_NETWORK env var, defaults to 'testnet'
 // Options: 'testnet' or 'mainnet'
-// const NETWORK = 'testnet';
-const NETWORK = 'mainnet';
+const NETWORK = process.env.HYPERLIQUID_NETWORK || 'testnet';
 
 // Network-specific configurations
 const NETWORKS = {
