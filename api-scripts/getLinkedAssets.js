@@ -1,23 +1,23 @@
-// Configuration
-const API_ENDPOINT = "https://api.hyperliquid-testnet.xyz/info";
+const { API_URL, NETWORK_NAME, displayNetworkInfo } = require('./config');
 
 /**
  * Get all linked Hip-1 and EVM assets
  * Shows token IDs, EVM contract addresses, and system addresses
+ * Supports both testnet and mainnet
  */
 
 async function getLinkedAssets() {
     try {
         console.log("═══════════════════════════════════════════════════════════════");
-        console.log("        HYPERLIQUID LINKED HIP-1 & EVM ASSETS");
+        console.log(`   HYPERLIQUID LINKED HIP-1 & EVM ASSETS - ${NETWORK_NAME}`);
         console.log("═══════════════════════════════════════════════════════════════");
-        console.log(`API Endpoint: ${API_ENDPOINT}`);
+        displayNetworkInfo();
         console.log("═══════════════════════════════════════════════════════════════\n");
 
         // Fetch spot metadata (includes all token information)
         console.log("📡 Fetching asset metadata...\n");
         
-        const response = await fetch(API_ENDPOINT, {
+        const response = await fetch(API_URL, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

@@ -1,23 +1,28 @@
+const dotenv = require('dotenv');
+dotenv.config();
+
+const { API_URL, NETWORK_NAME, displayNetworkInfo } = require('./config');
+
 // Configuration
-const VAULT_ADDRESS = process.env.VAULT_ADDRESS || "0xB6b9Db33FCdDC4c2FCCfc049D72aF5D0766A26e6";
-const API_ENDPOINT = "https://api.hyperliquid-testnet.xyz/info";
+const VAULT_ADDRESS = process.env.VAULT_ADDRESS;
 
 /**
  * Comprehensive Vault Data Fetcher
  * Gets positions, spot balances, and all relevant vault information
+ * Supports both testnet and mainnet
  */
 
 async function getVaultData(address) {
     try {
         console.log("═══════════════════════════════════════════════════════════════");
-        console.log("           HYPERLIQUID VAULT COMPREHENSIVE DATA");
+        console.log(`     HYPERLIQUID VAULT DATA - ${NETWORK_NAME}`);
         console.log("═══════════════════════════════════════════════════════════════");
         console.log(`Vault Address: ${address}`);
-        console.log(`API Endpoint: ${API_ENDPOINT}`);
+        displayNetworkInfo();
         console.log("═══════════════════════════════════════════════════════════════\n");
 
         // Fetch user state (contains everything)
-        const response = await fetch(API_ENDPOINT, {
+        const response = await fetch(API_URL, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -84,7 +89,7 @@ async function getVaultData(address) {
         console.log("─────────────────────────────────────────────────────────────");
         
         // Fetch spot balances separately
-        const spotResponse = await fetch(API_ENDPOINT, {
+        const spotResponse = await fetch(API_URL, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -132,7 +137,7 @@ async function getVaultData(address) {
         console.log("─────────────────────────────────────────────────────────────");
 
         // Fetch open orders separately
-        const ordersResponse = await fetch(API_ENDPOINT, {
+        const ordersResponse = await fetch(API_URL, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -170,7 +175,7 @@ async function getVaultData(address) {
         console.log("🔄 RECENT FILLS (Last 5)");
         console.log("─────────────────────────────────────────────────────────────");
 
-        const fillsResponse = await fetch(API_ENDPOINT, {
+        const fillsResponse = await fetch(API_URL, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -208,7 +213,7 @@ async function getVaultData(address) {
         console.log("💸 RECENT FUNDING PAYMENTS (Last 5)");
         console.log("─────────────────────────────────────────────────────────────");
 
-        const fundingResponse = await fetch(API_ENDPOINT, {
+        const fundingResponse = await fetch(API_URL, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

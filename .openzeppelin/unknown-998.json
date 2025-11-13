@@ -5,6 +5,11 @@
       "address": "0xB6b9Db33FCdDC4c2FCCfc049D72aF5D0766A26e6",
       "txHash": "0x581705ef64fad6574ce3db145559f53d3cf0f165f6acae0cfe95b8333a1d5b03",
       "kind": "transparent"
+    },
+    {
+      "address": "0xC181c7186C75F885A8f5d12D49ce9612e9091Ae0",
+      "txHash": "0x6a6398c429b1ee66c8163c9c6027fc55f249b40afcfd627907af163886bb5903",
+      "kind": "transparent"
     }
   ],
   "impls": {
@@ -536,6 +541,109 @@
             "type": "t_uint64",
             "contract": "HyperCoreVault",
             "src": "contracts/HyperCoreVault.sol:28"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)73_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)13_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_contract(IERC20)676": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "034deb916508dc558c4c42802a468054bf3fbedd4e07f22767e18c8f8eabe902": {
+      "address": "0x61EFAD45446533ea28734358094686A1d4477C1D",
+      "txHash": "0x662de833fdfa0527ab2f78cd4c5c10ec7ed0a4ecbc228c131746bc116a52ec50",
+      "layout": {
+        "solcVersion": "0.8.28",
+        "storage": [
+          {
+            "label": "USDC",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_contract(IERC20)676",
+            "contract": "HyperCoreVault",
+            "src": "contracts/HyperCoreVault.sol:23"
+          },
+          {
+            "label": "USDC_ID",
+            "offset": 20,
+            "slot": "0",
+            "type": "t_uint64",
+            "contract": "HyperCoreVault",
+            "src": "contracts/HyperCoreVault.sol:25"
           }
         ],
         "types": {

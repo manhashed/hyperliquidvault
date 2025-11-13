@@ -1,8 +1,11 @@
 #!/usr/bin/env node
 
+const { NETWORK_NAME } = require('./config');
+
 /**
  * Hyperliquid API - Get All Data
  * Fetches all available data for the vault in one go
+ * Supports both testnet and mainnet
  */
 
 const { getAccountState } = require('./getAccountState');
@@ -14,7 +17,7 @@ const { getMarketData } = require('./getMarketData');
 async function getAllData() {
   console.log("\n");
   console.log("█".repeat(60));
-  console.log("  HYPERLIQUID - COMPLETE DATA FETCH");
+  console.log(`  HYPERLIQUID - COMPLETE DATA FETCH - ${NETWORK_NAME}`);
   console.log("█".repeat(60));
   console.log("\n");
 

@@ -19126,7 +19126,7 @@
         "name": "HYPE",
         "hipTokenId": 1105,
         "evmContract": "0x0000000000000000000000000000000000000000",
-        "systemAddress": "0x2000000000000000000000000000000000000451",
+        "systemAddress": "0x2222222222222222222222222222222222222222",
         "decimals": {
           "sz": 2,
           "wei": 8
@@ -19140,7 +19140,7 @@
       {
         "name": "USDC",
         "hipTokenId": 0,
-        "evmContract": "0x0b80659a4076e9e93c7dbe0f10675a16a3e5c206",
+        "evmContract": "0x2B3370eE501B4a559b57D449569354196457D8Ab",
         "systemAddress": "0x2000000000000000000000000000000000000000",
         "decimals": {
           "sz": 8,

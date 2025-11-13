@@ -1,4 +1,5 @@
 import { ethers } from "hardhat";
+import hre from "hardhat";
 
 /**
  * Deposit tokens from vault's own balance to HyperCore
@@ -15,34 +16,57 @@ interface TokenConfig {
   tokenId: number;
 }
 
-// Available token configurations
-const TOKENS: { [key: string]: TokenConfig } = {
-  USDC: {
-    name: "USDC",
-    address: "0x2B3370eE501B4a559b57D449569354196457D8Ab",
-    decimals: 6,
-    tokenId: 0,
+// Network-specific token configurations
+const NETWORK_TOKENS = {
+  testnet: {
+    USDC: {
+      name: "USDC",
+      address: "0x2B3370eE501B4a559b57D449569354196457D8Ab",
+      decimals: 6,
+      tokenId: 0,
+    },
+    HYPE: {
+      name: "HYPE",
+      address: "0x2222222222222222222222222222222222222222",
+      decimals: 18,
+      tokenId: 1105,
+    },
   },
-  HYPE: {
-    name: "HYPE",
-    address: "0x2222222222222222222222222222222222222222",
-    decimals: 18,
-    tokenId: 135,
+  mainnet: {
+    USDT: {
+      name: "USDT",
+      address: "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
+      decimals: 6,
+      tokenId: 268,
+    },
+    HYPE: {
+      name: "HYPE",
+      address: "0x2222222222222222222222222222222222222222",
+      decimals: 18,
+      tokenId: 150,
+    },
   },
 };
 
 async function main() {
   const VAULT_ADDRESS = process.env.VAULT_ADDRESS || "0xB6b9Db33FCdDC4c2FCCfc049D72aF5D0766A26e6";
   
+  // Detect network
+  const networkName = hre.network.name;
+  const isMainnet = networkName === "hyperEvmMainnet";
+  const TOKENS = isMainnet ? NETWORK_TOKENS.mainnet : NETWORK_TOKENS.testnet;
+  
   // ═══════════════════════════════════════════════════════════════════
   // SELECT TOKEN HERE - Change this to switch between tokens
   // ═══════════════════════════════════════════════════════════════════
-  const SELECTED_TOKEN = "HYPE"; // Options: "USDC", "HYPE"
+  // Testnet: "USDC", "HYPE" | Mainnet: "USDT", "HYPE"
+  const SELECTED_TOKEN = "USDT";
   
   // Configuration
-  const AMOUNT = 0.05; // Amount in human-readable format
+  const AMOUNT = 26.96; // Amount in human-readable format
 
   console.log("Depositing vault's balance to HyperCore...");
+  console.log(`Network: ${isMainnet ? "MAINNET" : "TESTNET"} (${networkName})`);
   console.log("Vault address:", VAULT_ADDRESS);
   console.log("");
 
@@ -64,8 +88,8 @@ async function main() {
 
   // Calculate system address
   let systemAddress: string;
-  if (token.tokenId === 135) {
-    // HYPE special case
+  if (token.tokenId === 1105 || token.tokenId === 150) {
+    // HYPE special case (testnet: 1105, mainnet: 150)
     systemAddress = "0x2222222222222222222222222222222222222222";
   } else {
     // Standard system address: 0x20 + tokenId in big-endian
@@ -111,12 +135,8 @@ async function main() {
   try {
     console.log("\n📤 Submitting deposit vault balance to core transaction...");
     
-    // For HYPE (native token), send value with transaction
-    // For ERC20 tokens, no value needed (vault uses its own balance)
-    const txOptions = token.name === "HYPE" ? { value: scaledAmount } : {};
-    
     // Call depositVaultBalanceToCore
-    const tx = await vault.depositVaultBalanceToCore(token.address, token.tokenId, scaledAmount, txOptions);
+    const tx = await vault.depositVaultBalanceToCore(token.address, token.tokenId, scaledAmount);
     
     console.log("Transaction hash:", tx.hash);
     console.log("Waiting for confirmation...");

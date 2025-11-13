@@ -1,21 +1,44 @@
 import { execSync } from 'child_process';
 import * as fs from 'fs';
+import hre from 'hardhat';
 
 async function main() {
-  console.log("Preparing contracts for manual verification...");
+  // Detect network
+  const networkName = hre.network.name;
+  const isMainnet = networkName === "hyperEvmMainnet";
+  
+  // Network-specific configurations
+  const NETWORK_CONFIG = {
+    testnet: {
+      chainId: 998,
+      explorerUrl: "https://testnet.purrsec.com",
+      verifierUrl: "https://sourcify.parsec.finance/verify",
+    },
+    mainnet: {
+      chainId: 999,
+      explorerUrl: "https://hyperevmscan.io",
+      verifierUrl: "https://hyperevmscan.io/verify",
+    },
+  };
+  
+  const config = isMainnet ? NETWORK_CONFIG.mainnet : NETWORK_CONFIG.testnet;
+
+  console.log(`Preparing contracts for manual verification on ${isMainnet ? "Mainnet" : "Testnet"}...`);
   console.log("=".repeat(80));
 
   // Read deployment info
   if (!fs.existsSync('deployment-info.json')) {
     console.error("❌ deployment-info.json not found!");
     console.log("Please deploy the contract first using:");
-    console.log("npx hardhat run scripts/deployProxy.ts --network hyperEvmTestnet");
+    console.log(`npx hardhat run scripts/deployment/deployProxy.ts --network ${networkName}`);
     process.exit(1);
   }
 
   const deploymentInfo = JSON.parse(fs.readFileSync('deployment-info.json', 'utf8'));
   
   console.log("\n📋 Deployment Information:");
+  console.log("   Network:", deploymentInfo.network || networkName);
+  console.log("   Network Type:", isMainnet ? "MAINNET" : "TESTNET");
   console.log("   Proxy:", deploymentInfo.proxy);
   console.log("   Implementation:", deploymentInfo.implementation);
   console.log("   ProxyAdmin:", deploymentInfo.proxyAdmin);
@@ -58,17 +81,19 @@ async function main() {
 
   // Create verification instructions
   const instructions = `
-# Manual Verification Instructions for HyperEVM Testnet
+# Manual Verification Instructions for HyperEVM ${isMainnet ? "Mainnet" : "Testnet"}
 
 ## Deployment Addresses
 
+- **Network:** ${deploymentInfo.network || networkName} (${isMainnet ? "MAINNET" : "TESTNET"})
+- **Chain ID:** ${config.chainId}
 - **Proxy Contract:** ${deploymentInfo.proxy}
 - **Implementation Contract:** ${deploymentInfo.implementation}
 - **ProxyAdmin Contract:** ${deploymentInfo.proxyAdmin}
 
 ## Step 1: Verify Implementation Contract
 
-1. Go to: https://testnet.purrsec.com/address/${deploymentInfo.implementation}
+1. Go to: ${config.explorerUrl}/address/${deploymentInfo.implementation}
 2. Click on the "Contract" tab
 3. Click "Verify & Publish" button
 4. Select "Via flattened source code" or "Via standard JSON input"
@@ -96,7 +121,7 @@ async function main() {
 
 The proxy contract is a standard OpenZeppelin TransparentUpgradeableProxy.
 
-1. Go to: https://testnet.purrsec.com/address/${deploymentInfo.proxy}
+1. Go to: ${config.explorerUrl}/address/${deploymentInfo.proxy}
 2. Click on the "Contract" tab
 3. Click "Verify & Publish" button
 4. Select "Verify as Proxy"
@@ -109,22 +134,22 @@ If you have Foundry installed, you can try:
 \`\`\`bash
 forge verify-contract ${deploymentInfo.implementation} \\
   contracts/HyperCoreVault.sol:HyperCoreVault \\
-  --chain-id 998 \\
+  --chain-id ${config.chainId} \\
   --verifier sourcify \\
-  --verifier-url https://sourcify.parsec.finance/verify \\
+  --verifier-url ${config.verifierUrl} \\
   --compiler-version v0.8.28
 \`\`\`
 
 ## Explorer Links
 
-- **Proxy:** https://testnet.purrsec.com/address/${deploymentInfo.proxy}
-- **Implementation:** https://testnet.purrsec.com/address/${deploymentInfo.implementation}
-- **ProxyAdmin:** https://testnet.purrsec.com/address/${deploymentInfo.proxyAdmin}
+- **Proxy:** ${config.explorerUrl}/address/${deploymentInfo.proxy}
+- **Implementation:** ${config.explorerUrl}/address/${deploymentInfo.implementation}
+- **ProxyAdmin:** ${config.explorerUrl}/address/${deploymentInfo.proxyAdmin}
 
 ## Contract Details
 
-- **Network:** HyperEVM Testnet
-- **Chain ID:** 998
+- **Network:** HyperEVM ${isMainnet ? "Mainnet" : "Testnet"}
+- **Chain ID:** ${config.chainId}
 - **Compiler:** Solidity 0.8.28
 - **Optimization:** Enabled with 200 runs
 - **EVM Version:** paris
@@ -145,13 +170,14 @@ Visit the Parsec documentation or Hyperliquid Discord for assistance.
   console.log("\n" + "=".repeat(80));
   console.log("📊 SUMMARY");
   console.log("=".repeat(80));
+  console.log(`Network: ${isMainnet ? "MAINNET" : "TESTNET"} (${networkName})`);
   console.log("Files created:");
   console.log("  ✅ flattened/HyperCoreVault.sol");
   console.log("  ✅ VERIFICATION_INSTRUCTIONS.md");
   console.log("\n" + "=".repeat(80));
   console.log("🔗 Quick Links:");
-  console.log(`   Implementation: https://testnet.purrsec.com/address/${deploymentInfo.implementation}#code`);
-  console.log(`   Proxy: https://testnet.purrsec.com/address/${deploymentInfo.proxy}#code`);
+  console.log(`   Implementation: ${config.explorerUrl}/address/${deploymentInfo.implementation}#code`);
+  console.log(`   Proxy: ${config.explorerUrl}/address/${deploymentInfo.proxy}#code`);
   console.log("=".repeat(80));
   console.log("\n💡 Next Steps:");
   console.log("   1. Read VERIFICATION_INSTRUCTIONS.md");

@@ -1,7 +1,8 @@
 import { ethers } from "hardhat";
+import hre from "hardhat";
 
 /**
- * Spot Send - Send tokens from vault's spot balance to a SELECTED_TOKEN.contractAddress address
+ * Spot Send - Send tokens from vault's spot balance to a destination address
  * Uses spotSend function (Action ID 6)
  */
 
@@ -13,19 +14,35 @@ interface TokenConfig {
   contractAddress: string;
 }
 
-// Available token configurations
-const TOKENS: { [key: string]: TokenConfig } = {
-  USDC: {
-    name: "USDC",
-    tokenId: 0n,
-    decimals: 8,
-    contractAddress: "0x2B3370eE501B4a559b57D449569354196457D8Ab",
+// Network-specific token configurations
+const NETWORK_TOKENS = {
+  testnet: {
+    USDC: {
+      name: "USDC",
+      tokenId: 0n,
+      decimals: 8,
+      contractAddress: "0x2B3370eE501B4a559b57D449569354196457D8Ab",
+    },
+    HYPE: {
+      name: "HYPE",
+      tokenId: 1105n,
+      decimals: 8,
+      contractAddress: "0x2222222222222222222222222222222222222222",
+    },
   },
-  HYPE: {
-    name: "HYPE",
-    tokenId: 135n,
-    decimals: 18,
-    contractAddress: "0x2222222222222222222222222222222222222222",
+  mainnet: {
+    USDT: {
+      name: "USDT",
+      tokenId: 268n,
+      decimals: 8,
+      contractAddress: "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
+    },
+    HYPE: {
+      name: "HYPE",
+      tokenId: 150n,
+      decimals: 8,
+      contractAddress: "0x2222222222222222222222222222222222222222",
+    },
   },
 };
 
@@ -33,13 +50,20 @@ async function main() {
   const VAULT_ADDRESS = process.env.VAULT_ADDRESS || "0xB6b9Db33FCdDC4c2FCCfc049D72aF5D0766A26e6";
   const DESTINATION_ADDRESS = "0x2bbb22be8deab3487b378c95e276768a772c2738";
   
+  // Detect network
+  const networkName = hre.network.name;
+  const isMainnet = networkName === "hyperEvmMainnet";
+  const TOKENS = isMainnet ? NETWORK_TOKENS.mainnet : NETWORK_TOKENS.testnet;
+  
   // SELECT TOKEN HERE - Change this to switch between tokens
-  const SELECTED_TOKEN = "USDC"; // Options: "USDC", "HYPE"
+  // Testnet: "USDC", "HYPE" | Mainnet: "USDT", "HYPE"
+  const SELECTED_TOKEN = "USDT";
   
   // Configuration
-  const AMOUNT = 1; // Amount in human-readable format
+  const AMOUNT = 26.96; // Amount in human-readable format
 
   console.log("Spot Send - Sending tokens from vault...");
+  console.log(`Network: ${isMainnet ? "MAINNET" : "TESTNET"} (${networkName})`);
   console.log("Vault address:", VAULT_ADDRESS);
   console.log("");
 
@@ -75,7 +99,7 @@ async function main() {
   try {
     console.log("Submitting spot send transaction...");
     const tx = await vault.spotSend(
-      token.contractAddress,
+      DESTINATION_ADDRESS,
       token.tokenId,
       scaledAmount
     );
@@ -89,7 +113,7 @@ async function main() {
     console.log("Gas used:", receipt.gasUsed.toString());
     
     console.log("\nTransaction:", `https://testnet.purrsec.com/tx/${tx.hash}`);
-    console.log(`\n✅ Successfully sent ${AMOUNT} ${token.name} to ${token.contractAddress}`);
+    console.log(`\n✅ Successfully sent ${AMOUNT} ${token.name} to ${DESTINATION_ADDRESS}`);
     console.log("\n💡 Note: This sends from vault's SPOT balance, not perp balance");
     console.log(`💡 Token contract: ${token.contractAddress}`);
     console.log("💡 Run 'node api-scripts/getAccountState.js' to check balances");

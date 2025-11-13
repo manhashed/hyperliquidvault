@@ -5163,8 +5163,8 @@
       {
         "name": "HYPE",
         "hipTokenId": 150,
-        "evmContract": null,
-        "systemAddress": "0x2000000000000000000000000000000000000096",
+        "evmContract": "0x0000000000000000000000000000000000000000",
+        "systemAddress": "0x2222222222222222222222222222222222222222",
         "decimals": {
           "sz": 2,
           "wei": 8

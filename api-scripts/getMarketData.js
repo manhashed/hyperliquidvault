@@ -1,16 +1,18 @@
 #!/usr/bin/env node
 
+const { API_URL, NETWORK_NAME, displayNetworkInfo } = require('./config');
+
 /**
  * Hyperliquid API - Get Market Data
  * Fetches market information for all available assets
+ * Supports both testnet and mainnet
  */
-
-const API_URL = "https://api.hyperliquid-testnet.xyz/info";
 
 async function getMarketData() {
   console.log("=".repeat(60));
-  console.log("Hyperliquid Market Data");
+  console.log(`Hyperliquid Market Data - ${NETWORK_NAME}`);
   console.log("=".repeat(60));
+  displayNetworkInfo();
   console.log("");
 
   try {

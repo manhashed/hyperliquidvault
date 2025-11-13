@@ -20,12 +20,15 @@ contract HyperCoreVault is Initializable, OwnableUpgradeable {
 
     // Constants
     address public constant CORE_WRITER = 0x3333333333333333333333333333333333333333;
+    address public constant HYPE_ADDRESS = 0x2222222222222222222222222222222222222222;
+
     IERC20 public USDC; // USDC token on HyperEVM (6 decimals)
-    uint256 public constant USD_SCALE = 10**8; // Hyperliquid USD/price/size scaling
-    uint256 public constant WEI_SCALE = 10**18; // Native token wei scaling
-    uint256 public constant USDC_DECIMALS = 10**6; // USDC decimals
 
     uint64 public USDC_ID;
+    uint64 public HYPE_ID;
+
+    uint64 public USD_SCALE;
+    uint64 public USDC_DECIMALS;
 
     // Events
     event Deposited(address indexed user, uint256 amount);
@@ -44,10 +47,14 @@ contract HyperCoreVault is Initializable, OwnableUpgradeable {
      * @param usdcAddress Address of USDC on HyperEVM
      * @param owner Address of the contract owner
      */
-    function initialize(address usdcAddress, address owner) public initializer {
+    function initialize(address usdcAddress, address owner, uint64 usdcId, uint64 hypeId) public initializer {
         __Ownable_init(owner);
         USDC = IERC20(usdcAddress);
-        USDC_ID = 0;
+        USDC_ID = usdcId;
+        HYPE_ID = hypeId;
+
+        USD_SCALE = 1e8;
+        USDC_DECIMALS = 1e6;
     }
 
     // ═══════════════════════════════════════════════════════════════════════════
@@ -67,8 +74,9 @@ contract HyperCoreVault is Initializable, OwnableUpgradeable {
         USDC.safeTransferFrom(msg.sender, address(this), amount);
 
         // Send to system address (0x2000...0000 for token ID 0)
+        address systemAddress = address(uint160(0x2000000000000000000000000000000000000000) | uint160(USDC_ID));
         // This credits the vault's HyperCore spot balance
-        USDC.safeTransfer(address(uint160(0x2000000000000000000000000000000000000000)), amount);
+        USDC.safeTransfer(systemAddress, amount);
 
         emit Deposited(msg.sender, amount);
     }
@@ -79,21 +87,21 @@ contract HyperCoreVault is Initializable, OwnableUpgradeable {
      *      The system will call transfer(recipient, amount) on USDC contract.
      *      Recipient is automatically set to the sender (this vault).
      * @param amount USDC amount in native decimals (6 decimals, e.g., 1000000 = 1 USDC).
+     *
+     * Scales input (10^6) to 10^8 before sending to Core.
      */
     function withdrawUSDC(uint256 amount) external onlyOwner {
         if (amount == 0) revert InvalidAmount();
 
-        // Scale to 10^18 for spotSend (weiAmount)
-        uint64 weiAmount = uint64(amount * 1e12); // Convert 6 decimals to 18 decimals
+        // Scale amount from 10^6 (USDC native decimals) to 10^8 (core protocol scale)
+        uint64 amountScaled = uint64(amount * USD_SCALE / USDC_DECIMALS);
 
         // spotSend with system address as destination
         // System will transfer tokens to this vault
-        address systemAddress = address(uint160(0x2000000000000000000000000000000000000000));
-        bytes memory encoded = abi.encode(systemAddress, USDC_ID, weiAmount);
-        _executeAction(0x000006, encoded);
+        address systemAddress = address(uint160(0x2000000000000000000000000000000000000000) | uint160(USDC_ID));
 
-        // Transfer from vault to caller
-        USDC.safeTransfer(msg.sender, amount);
+        bytes memory encoded = abi.encode(systemAddress, USDC_ID, amountScaled);
+        _executeAction(0x000006, encoded);
 
         emit Withdrawn(msg.sender, amount);
     }
@@ -320,16 +328,16 @@ contract HyperCoreVault is Initializable, OwnableUpgradeable {
         // HYPE: 0x2222222222222222222222222222222222222222
         // Others: 0x20 + zeros + tokenId in big-endian
         address systemAddress;
-        if (tokenId == 135) {
+        if (tokenId == HYPE_ID) {
             // HYPE special case
-            systemAddress = 0x2222222222222222222222222222222222222222;
+            systemAddress = HYPE_ADDRESS;
         } else {
             // Standard system address: 0x20 + tokenId in big-endian
             systemAddress = address(uint160(0x2000000000000000000000000000000000000000) | uint160(tokenId));
         }
 
         // Check if native token (HYPE)
-        if (systemAddress == 0x2222222222222222222222222222222222222222) {
+        if (systemAddress == HYPE_ADDRESS) {
             // For native HYPE, msg.value should be sent
             if (msg.value != amount) revert InvalidAmount();
             
@@ -360,14 +368,14 @@ contract HyperCoreVault is Initializable, OwnableUpgradeable {
 
         // Calculate system address based on token ID
         address systemAddress;
-        if (tokenId == 135) {
-            systemAddress = 0x2222222222222222222222222222222222222222;
+        if (tokenId == HYPE_ID) {
+            systemAddress = HYPE_ADDRESS;
         } else {
             systemAddress = address(uint160(0x2000000000000000000000000000000000000000) | uint160(tokenId));
         }
 
         // Check if native token (HYPE)
-        if (systemAddress == 0x2222222222222222222222222222222222222222) {
+        if (systemAddress == HYPE_ADDRESS) {
             // For native HYPE, msg.value should be sent
             if (msg.value != amount) revert InvalidAmount();
             
@@ -395,8 +403,8 @@ contract HyperCoreVault is Initializable, OwnableUpgradeable {
 
         // Calculate system address based on token ID
         address systemAddress;
-        if (tokenId == 135) {
-            systemAddress = 0x2222222222222222222222222222222222222222;
+        if (tokenId == HYPE_ID) {
+            systemAddress = HYPE_ADDRESS;
         } else {
             systemAddress = address(uint160(0x2000000000000000000000000000000000000000) | uint160(tokenId));
         }
@@ -457,7 +465,7 @@ contract HyperCoreVault is Initializable, OwnableUpgradeable {
         for (uint256 i = 0; i < tokens.length; i++) {
             address token = tokens[i];
             
-            if (token == address(0x2222222222222222222222222222222222222222)) {
+            if (token == HYPE_ADDRESS) {
                 // Native HYPE - send via transfer
                 uint256 balance = address(this).balance;
                 if (balance > 0) {
@@ -471,5 +479,25 @@ contract HyperCoreVault is Initializable, OwnableUpgradeable {
                 }
             }
         }
+    }
+
+    function setHypeId(uint64 hypeId) external onlyOwner {
+        HYPE_ID = hypeId;
+    }
+
+    function setUsdcId(uint64 usdcId) external onlyOwner {
+        USDC_ID = usdcId;
+    }
+
+    function setUSDC(address usdcAddress) external onlyOwner {
+        USDC = IERC20(usdcAddress);
+    }
+
+    function setUsdScale(uint64 usdScale) external onlyOwner {
+        USD_SCALE = usdScale;
+    }
+
+    function setUsdcDecimals(uint64 usdcDecimals) external onlyOwner {
+        USDC_DECIMALS = usdcDecimals;
     }
 }

@@ -1,4 +1,5 @@
 import { ethers } from "hardhat";
+import hre from "hardhat";
 
 // Asset configuration structure
 interface AssetConfig {
@@ -12,37 +13,68 @@ interface AssetConfig {
   cloid: bigint;
 }
 
-// Available asset configurations
-const ASSETS: { [key: string]: AssetConfig } = {
-  BTC: {
-    name: "BTC",
-    assetId: 3,
-    price: 107616,
-    size: 0.001,
-    isBuy: true,
-    reduceOnly: false,
-    tif: 3, // IOC
-    cloid: 0n,
+// Network-specific asset configurations
+const NETWORK_ASSETS = {
+  testnet: {
+    BTC: {
+      name: "BTC",
+      assetId: 3,
+      price: 107616,
+      size: 0.001,
+      isBuy: true,
+      reduceOnly: false,
+      tif: 3, // IOC
+      cloid: 0n,
+    },
+    HYPE: {
+      name: "HYPE",
+      assetId: 1105,
+      price: 112.5,
+      size: 0.5,
+      isBuy: true,
+      reduceOnly: false,
+      tif: 3, // IOC
+      cloid: 0n,
+    },
   },
-  HYPE: {
-    name: "HYPE",
-    assetId: 135,
-    price: 112.5,
-    size: 0.5,
-    isBuy: true,
-    reduceOnly: false,
-    tif: 3, // IOC
-    cloid: 0n,
+  mainnet: {
+    BTC: {
+      name: "BTC",
+      assetId: 0,
+      price: 107616,
+      size: 0.001,
+      isBuy: true,
+      reduceOnly: false,
+      tif: 3, // IOC
+      cloid: 0n,
+    },
+    HYPE: {
+      name: "HYPE",
+      assetId: 150,
+      price: 112.5,
+      size: 0.5,
+      isBuy: true,
+      reduceOnly: false,
+      tif: 3, // IOC
+      cloid: 0n,
+    },
   },
 };
 
 async function main() {
   const VAULT_ADDRESS = process.env.VAULT_ADDRESS || "0xB6b9Db33FCdDC4c2FCCfc049D72aF5D0766A26e6";
   
+  // Detect network
+  const networkName = hre.network.name;
+  const isMainnet = networkName === "hyperEvmMainnet";
+  const ASSETS = isMainnet ? NETWORK_ASSETS.mainnet : NETWORK_ASSETS.testnet;
+  
   // SELECT ASSET HERE - Change this to switch between assets
-  const SELECTED_ASSET = "HYPE"; // Options: "BTC", "HYPE"
+  // Testnet & Mainnet: "BTC", "HYPE"
+  const SELECTED_ASSET = "HYPE";
 
   console.log("Placing limit order on HyperCoreVault...");
+  console.log(`Network: ${isMainnet ? "MAINNET" : "TESTNET"} (${networkName})`);
   console.log("Vault address:", VAULT_ADDRESS);
 
   // Get the signer (owner)
@@ -55,7 +87,7 @@ async function main() {
   // Get selected asset configuration
   const config = ASSETS[SELECTED_ASSET];
   if (!config) {
-    throw new Error(`Unknown asset: ${SELECTED_ASSET}`);
+    throw new Error(`Unknown asset: ${SELECTED_ASSET}. Available: ${Object.keys(ASSETS).join(", ")}`);
   }
 
   // Scale values to 10^8 for HyperCore
@@ -112,8 +144,10 @@ async function main() {
     
     const receipt = await tx.wait();
     console.log("✅ Order placed successfully!");
-    console.log("Block number:", receipt.blockNumber);
-    console.log("Gas used:", receipt.gasUsed.toString());
+    if (receipt) {
+      console.log("Block number:", receipt.blockNumber);
+      console.log("Gas used:", receipt.gasUsed.toString());
+    }
     
     console.log("\nTransaction:", `https://testnet.purrsec.com/tx/${tx.hash}`);
   } catch (error: any) {

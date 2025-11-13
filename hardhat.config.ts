@@ -24,14 +24,12 @@ const config: HardhatUserConfig = {
     hyperEvmMainnet: {
       url: "https://rpc.hyperliquid.xyz/evm",
       chainId: 999,
-      accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
+      accounts: process.env.MAINNET_PRIVATE_KEY ? [process.env.MAINNET_PRIVATE_KEY] : [],
     },
   },
   etherscan: {
-    apiKey: {
-      hyperEvmTestnet: "no-api-key-needed",
-      hyperEvmMainnet: "no-api-key-needed",
-    },
+    apiKey: process.env.ETHERSCAN_API_KEY,
+
     customChains: [
       {
         network: "hyperEvmTestnet",
@@ -45,7 +43,7 @@ const config: HardhatUserConfig = {
         network: "hyperEvmMainnet",
         chainId: 999,
         urls: {
-          apiURL: "https://hyperevmscan.io/api",
+          apiURL: "https://api.hyperevmscan.io/v2/api",
           browserURL: "https://hyperevmscan.io",
         },
       },

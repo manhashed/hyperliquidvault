@@ -1,18 +1,24 @@
 #!/usr/bin/env node
 
+const dotenv = require('dotenv');
+dotenv.config();
+
+const { API_URL, NETWORK_NAME, displayNetworkInfo } = require('./config');
+
 /**
  * Hyperliquid API - Get Open Orders
  * Fetches all open orders for the vault address
+ * Supports both testnet and mainnet
  */
 
-const VAULT_ADDRESS = process.env.VAULT_ADDRESS || "0xB6b9Db33FCdDC4c2FCCfc049D72aF5D0766A26e6";
-const API_URL = "https://api.hyperliquid-testnet.xyz/info";
+const VAULT_ADDRESS = process.env.VAULT_ADDRESS;
 
 async function getOpenOrders() {
   console.log("=".repeat(60));
-  console.log("Hyperliquid Open Orders");
+  console.log(`Hyperliquid Open Orders - ${NETWORK_NAME}`);
   console.log("=".repeat(60));
   console.log("Vault Address:", VAULT_ADDRESS);
+  displayNetworkInfo();
   console.log("");
 
   try {

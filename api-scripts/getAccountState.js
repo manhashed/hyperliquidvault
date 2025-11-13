@@ -1,19 +1,23 @@
 #!/usr/bin/env node
 
+const dotenv = require('dotenv');
+dotenv.config();
+
+const { API_URL, NETWORK_NAME, displayNetworkInfo } = require('./config');
+
 /**
  * Hyperliquid API - Get Account State
  * Fetches comprehensive account information including positions, margin, and balances
  */
 
-const VAULT_ADDRESS = process.env.VAULT_ADDRESS || "0xB6b9Db33FCdDC4c2FCCfc049D72aF5D0766A26e6";
-const API_URL = "https://api.hyperliquid-testnet.xyz/info";
+const VAULT_ADDRESS = process.env.VAULT_ADDRESS;
 
 async function getAccountState() {
   console.log("=".repeat(60));
-  console.log("Hyperliquid Account State");
+  console.log(`Hyperliquid Account State - ${NETWORK_NAME}`);
   console.log("=".repeat(60));
   console.log("Vault Address:", VAULT_ADDRESS);
-  console.log("API Endpoint:", API_URL);
+  displayNetworkInfo();
   console.log("");
 
   try {

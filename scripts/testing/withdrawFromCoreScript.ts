@@ -1,4 +1,5 @@
 import { ethers } from "hardhat";
+import hre from "hardhat";
 
 /**
  * Withdraw tokens from HyperCore
@@ -13,32 +14,61 @@ interface TokenConfig {
   tokenId: number;
 }
 
-// Available token configurations
-const TOKENS: { [key: string]: TokenConfig } = {
-  USDC: {
-    name: "USDC",
-    address: "0x2B3370eE501B4a559b57D449569354196457D8Ab",
-    decimals: 6,
-    tokenId: 0,
+// Network-specific token configurations
+const NETWORK_TOKENS = {
+  testnet: {
+    USDC: {
+      name: "USDC",
+      address: "0x2B3370eE501B4a559b57D449569354196457D8Ab",
+      decimals: 8,
+      tokenId: 0,
+    },
+    HYPE: {
+      name: "HYPE",
+      address: "0x2222222222222222222222222222222222222222",
+      decimals: 8,
+      tokenId: 1105,
+    },
   },
-  HYPE: {
-    name: "HYPE",
-    address: "0x2222222222222222222222222222222222222222",
-    decimals: 18,
-    tokenId: 135,
+  mainnet: {
+    USDT: {
+      name: "USDT",
+      address: "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
+      decimals: 8,
+      tokenId: 268,
+    },
+    USDC: {
+      name: "USDC",
+      address: "",
+      decimals: 6,
+      tokenId: 0,
+    },
+    HYPE: {
+      name: "HYPE",
+      address: "0x2222222222222222222222222222222222222222",
+      decimals: 8,
+      tokenId: 150,
+    },
   },
 };
 
 async function main() {
-  const VAULT_ADDRESS = process.env.VAULT_ADDRESS || "0xB6b9Db33FCdDC4c2FCCfc049D72aF5D0766A26e6";
+  const VAULT_ADDRESS = process.env.VAULT_ADDRESS;
+  
+  // Detect network
+  const networkName = hre.network.name;
+  const isMainnet = networkName === "hyperEvmMainnet";
+  const TOKENS = isMainnet ? NETWORK_TOKENS.mainnet : NETWORK_TOKENS.testnet;
   
   // SELECT TOKEN HERE - Change this to switch between tokens
-  const SELECTED_TOKEN = "USDC"; // Options: "USDC", "HYPE"
+  // Testnet: "USDC", "HYPE" | Mainnet: "USDT", "HYPE"
+  const SELECTED_TOKEN = "USDT";
   
   // Configuration
-  const AMOUNT = 5; // Amount in human-readable format
+  const AMOUNT = 25.96; // Amount in human-readable format
 
   console.log("Withdrawing tokens from HyperCore...");
+  console.log(`Network: ${isMainnet ? "MAINNET" : "TESTNET"} (${networkName})`);
   console.log("Vault address:", VAULT_ADDRESS);
   console.log("");
 
