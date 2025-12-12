@@ -13,7 +13,7 @@ async function main() {
   const USDC_HYPER_SCALE = isMainnet ? 1e6 : 1e8; 
 
   // Transfer parameters
-  const AMOUNT = 26; // Amount in stablecoin units (USDC/USDT)
+  const AMOUNT = 1; // Amount in stablecoin units (USDC/USDT)
   const TO_PERP = false; // true = Spot → Perp, false = Perp → Spot
 
   console.log("=".repeat(80));

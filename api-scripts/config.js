@@ -5,7 +5,8 @@
 
 // Network selection - Reads from HYPERLIQUID_NETWORK env var, defaults to 'testnet'
 // Options: 'testnet' or 'mainnet'
-const NETWORK = process.env.HYPERLIQUID_NETWORK || 'testnet';
+// const NETWORK = process.env.HYPERLIQUID_NETWORK || 'testnet';
+const NETWORK = process.env.HYPERLIQUID_NETWORK || 'mainnet';
 
 // Network-specific configurations
 const NETWORKS = {

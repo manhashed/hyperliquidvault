@@ -6,6 +6,10 @@ import {Initializable} from "@openzeppelin/contracts-upgradeable/proxy/utils/Ini
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import {SafeERC20} from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 
+interface ICoreDepositWallet {
+    function deposit(uint256 amount, uint32 destinationDex) external;
+}
+
 /**
  * @notice Modular smart contract vault on HyperEVM for interacting with HyperCore via CoreWriter.
  *         Supports basic deposit/withdraw of USDC, with separate functions for all CoreWriter actions.
@@ -30,6 +34,8 @@ contract HyperCoreVault is Initializable, OwnableUpgradeable {
     uint64 public USD_SCALE;
     uint64 public USDC_DECIMALS;
 
+    address public CoreDepositWallet;
+
     // Events
     event Deposited(address indexed user, uint256 amount);
     event Withdrawn(address indexed user, uint256 amount);
@@ -47,7 +53,7 @@ contract HyperCoreVault is Initializable, OwnableUpgradeable {
      * @param usdcAddress Address of USDC on HyperEVM
      * @param owner Address of the contract owner
      */
-    function initialize(address usdcAddress, address owner, uint64 usdcId, uint64 hypeId) public initializer {
+    function initialize(address usdcAddress, address owner, uint64 usdcId, uint64 hypeId, address coreDepositWallet) public initializer {
         __Ownable_init(owner);
         USDC = IERC20(usdcAddress);
         USDC_ID = usdcId;
@@ -55,6 +61,8 @@ contract HyperCoreVault is Initializable, OwnableUpgradeable {
 
         USD_SCALE = 1e8;
         USDC_DECIMALS = 1e6;
+
+        CoreDepositWallet = coreDepositWallet;
     }
 
     // ═══════════════════════════════════════════════════════════════════════════
@@ -67,16 +75,25 @@ contract HyperCoreVault is Initializable, OwnableUpgradeable {
      *      System address for USDC (token ID 0): 0x2000000000000000000000000000000000000000
      * @param amount USDC amount in native decimals (6 decimals, e.g., 1000000 = 1 USDC).
      */
-    function depositUSDC(uint256 amount) external {
+    function depositUSDC(uint256 amount, bool isPerp) external {
         if (amount == 0) revert InvalidAmount();
 
         // Transfer USDC from user to vault
         USDC.safeTransferFrom(msg.sender, address(this), amount);
 
-        // Send to system address (0x2000...0000 for token ID 0)
-        address systemAddress = address(uint160(0x2000000000000000000000000000000000000000) | uint160(USDC_ID));
-        // This credits the vault's HyperCore spot balance
-        USDC.safeTransfer(systemAddress, amount);
+        // // Send to system address (0x2000...0000 for token ID 0)
+        // address systemAddress = address(uint160(0x2000000000000000000000000000000000000000) | uint160(USDC_ID));
+        // // This credits the vault's HyperCore spot balance
+        // USDC.safeTransfer(systemAddress, amount);
+
+        USDC.forceApprove(CoreDepositWallet, amount);
+
+        if(isPerp){
+            ICoreDepositWallet(CoreDepositWallet).deposit(amount, 0);
+        }
+        else{
+            ICoreDepositWallet(CoreDepositWallet).deposit(amount, type(uint32).max);
+        }
 
         emit Deposited(msg.sender, amount);
     }

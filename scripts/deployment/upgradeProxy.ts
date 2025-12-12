@@ -53,7 +53,7 @@ async function main() {
   console.log("   Balance:", ethers.formatEther(balance), "HYPE");
   console.log("   Proxy Address:", PROXY_ADDRESS);
   if (PROXY_ADMIN_ADDRESS) {
-    console.log("   ProxyAdmin Address:", PROXY_ADMIN_ADDRESS);
+  console.log("   ProxyAdmin Address:", PROXY_ADMIN_ADDRESS);
   }
 
   // Deploy new implementation
@@ -77,7 +77,7 @@ async function main() {
   console.log("Proxy Address:              ", PROXY_ADDRESS);
   console.log("New Implementation Address: ", newImplementationAddress);
   if (PROXY_ADMIN_ADDRESS) {
-    console.log("ProxyAdmin Address:         ", PROXY_ADMIN_ADDRESS);
+  console.log("ProxyAdmin Address:         ", PROXY_ADMIN_ADDRESS);
   }
   console.log("=".repeat(80));
 
