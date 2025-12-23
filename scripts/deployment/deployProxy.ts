@@ -15,14 +15,22 @@ async function main() {
       hypeId: 1105,
       chainId: 998,
       explorerUrl: "https://testnet.purrsec.com",
+      coreDepositWallet: "0x0B80659a4076E9E93C7DbE0f10675A16a3e5C206"
     },
     mainnet: {
-      name: "USDT",
-      address: "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
-      tokenId: 268,
+      // name: "USDT",
+      // address: "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
+      // tokenId: 268,
+      // hypeId: 150,
+      // chainId: 999,
+      // explorerUrl: "https://hyperevmscan.io",
+      name: "USDC",
+      address: "0xb88339CB7199b77E23DB6E890353E22632Ba630f",
+      tokenId: 0,
       hypeId: 150,
       chainId: 999,
       explorerUrl: "https://hyperevmscan.io",
+      coreDepositWallet: "0x6B9E773128f453f5c2C60935Ee2DE2CBc5390A24"
     },
   };
   
@@ -52,7 +60,7 @@ async function main() {
   // The initialize function will be called automatically with these args
   const vault = await upgrades.deployProxy(
     HyperCoreVault,
-    [STABLECOIN_ADDRESS, deployer.address, config.tokenId, config.hypeId],
+    [STABLECOIN_ADDRESS, deployer.address, config.tokenId, config.hypeId, config.coreDepositWallet],
     { 
       kind: 'transparent',
       initializer: 'initialize'

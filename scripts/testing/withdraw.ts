@@ -14,11 +14,15 @@ const STABLECOIN_CONFIG = {
     explorerUrl: "https://testnet.purrsec.com",
   },
   mainnet: {
-    name: "USDT",
-    address: "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
-    decimals: 6,
+    // name: "USDT",
+    // address: "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
+    // decimals: 6,
     chainId: 999,
     explorerUrl: "https://hyperevmscan.io",
+
+    name: "USDC",
+    address: "0xb88339CB7199b77E23DB6E890353E22632Ba630f",
+    decimals: 6,
   },
 };
 
@@ -49,7 +53,7 @@ async function main() {
   }
 
   // Withdrawal amount
-  const WITHDRAW_AMOUNT = 26.96; // Amount in stablecoin units (adjust based on vault balance)
+  const WITHDRAW_AMOUNT = 1; // Amount in stablecoin units (adjust based on vault balance)
 
   console.log("\n📋 Configuration:");
   console.log("   Network:", isMainnet ? "MAINNET" : "TESTNET", `(${networkName})`);

@@ -14,18 +14,23 @@ async function main() {
       decimals: 6,
     },
     mainnet: {
-      name: "USDT",
-      address: "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
+      // name: "USDT",
+      // address: "0xb8ce59fc3717ada4c02eadf9682a9e934f625ebb",
+      // decimals: 6,
+      name: "USDC",
+      address: "0xb88339CB7199b77E23DB6E890353E22632Ba630f",
       decimals: 6,
     },
   };
+
+  const isPerp = true;
   
   const stablecoin = isMainnet ? STABLECOIN_CONFIG.mainnet : STABLECOIN_CONFIG.testnet;
   
   // Configuration
   const VAULT_ADDRESS = process.env.VAULT_ADDRESS || "";
   const APPROVAL_AMOUNT = "1000000"; // 1M tokens
-  const DEPOSIT_AMOUNT = "21"; // 10 tokens
+  const DEPOSIT_AMOUNT = "1"; // 10 tokens
 
   if (!VAULT_ADDRESS) {
     console.error("Error: VAULT_ADDRESS not set in environment variables");
@@ -85,7 +90,7 @@ async function main() {
 
   // Step 2: Deposit stablecoin
   console.log(`\nDepositing ${DEPOSIT_AMOUNT} ${stablecoin.name} to vault...`);
-  const depositTx = await vault.depositUSDC(depositAmountWei);
+  const depositTx = await vault.depositUSDC(depositAmountWei, isPerp);
   console.log("Deposit transaction hash:", depositTx.hash);
   await depositTx.wait();
   console.log(`${stablecoin.name} deposited successfully!`);
