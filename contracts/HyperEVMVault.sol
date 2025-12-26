@@ -6,7 +6,7 @@ import {Initializable} from "@openzeppelin/contracts-upgradeable/proxy/utils/Ini
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import {SafeERC20} from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 import {IERC20Metadata} from "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol";
-import {IERC4626} from "./interface/IERC4626.sol"
+import {IERC4626} from "@openzeppelin/contracts/interfaces/IERC4626.sol";
 
 
 /**
@@ -56,8 +56,8 @@ contract HyperEVMVault is Initializable, OwnableUpgradeable {
         USDC = IERC20(usdcAddress);
         felixVault = IERC4626(FELIX_VAULT);
         
-        // Approve Felix vault to spend USDC
-        USDC.safeApprove(FELIX_VAULT, type(uint256).max);
+        // // Approve Felix vault to spend USDC
+        // USDC.safeIncreaseAllowance(FELIX_VAULT, type(uint256).max);
     }
 
     // ═══════════════════════════════════════════════════════════════════════════
@@ -75,6 +75,9 @@ contract HyperEVMVault is Initializable, OwnableUpgradeable {
 
         // Transfer USDC from user to this vault
         USDC.safeTransferFrom(msg.sender, address(this), amount);
+
+        // Increase USDC allowance for felix
+        USDC.safeIncreaseAllowance(FELIX_VAULT, amount);
 
         // Deposit to Felix vault
         uint256 felixShares = felixVault.deposit(amount, address(this));
@@ -108,6 +111,9 @@ contract HyperEVMVault is Initializable, OwnableUpgradeable {
 
         // Calculate assets to withdraw based on current vault value
         assets = felixVault.previewRedeem(shares);
+
+        // Increase vault token allowance for felix
+        IERC20(FELIX_VAULT).safeIncreaseAllowance(address(FELIX_VAULT), shares);
 
         // Redeem from Felix vault
         uint256 assetsReceived = felixVault.redeem(shares, address(this), address(this));
@@ -184,8 +190,8 @@ contract HyperEVMVault is Initializable, OwnableUpgradeable {
     function getUserAssets(address user) external view returns (uint256 userAssets) {
         if (totalShares == 0) return 0;
         
-        // Get total assets from Felix vault
-        uint256 totalVaultAssets = felixVault.totalAssets();
+        // Get total assets from Felix vault based on vault's share balance
+        uint256 totalVaultAssets = felixVault.convertToAssets(felixVault.balanceOf(address(this)));
         
         // Calculate user's proportional share
         userAssets = (totalVaultAssets * userShares[user]) / totalShares;
@@ -234,7 +240,7 @@ contract HyperEVMVault is Initializable, OwnableUpgradeable {
      * @return totalYield Total yield in USDC.
      */
     function getTotalYield() external view returns (uint256 totalYield) {
-        uint256 totalVaultAssets = felixVault.totalAssets();
+        uint256 totalVaultAssets = felixVault.convertToAssets(felixVault.balanceOf(address(this)));
         if (totalVaultAssets > totalDeposits) {
             totalYield = totalVaultAssets - totalDeposits;
         } else {
@@ -249,7 +255,7 @@ contract HyperEVMVault is Initializable, OwnableUpgradeable {
     function getPricePerShare() external view returns (uint256 pricePerShare) {
         if (totalShares == 0) return 1e18; // Default to 1:1 if no shares
         
-        uint256 totalVaultAssets = felixVault.totalAssets();
+        uint256 totalVaultAssets = felixVault.convertToAssets(felixVault.balanceOf(address(this)));
         pricePerShare = (totalVaultAssets * 1e18) / totalShares;
     }
 
@@ -295,11 +301,11 @@ contract HyperEVMVault is Initializable, OwnableUpgradeable {
     // ═══════════════════════════════════════════════════════════════════════════
 
     /**
-     * @notice Get total assets managed by the underlying Felix vault.
-     * @return totalManagedAssets Total assets in USDC.
+     * @notice Get total assets for this vault based on vault's share balance.
+     * @return totalManagedAssets Total assets in USDC corresponding to vault's shares.
      */
     function totalAssets() external view returns (uint256 totalManagedAssets) {
-        return felixVault.totalAssets();
+        return felixVault.convertToAssets(felixVault.balanceOf(address(this)));
     }
 
     /**
@@ -412,12 +418,12 @@ contract HyperEVMVault is Initializable, OwnableUpgradeable {
         if (usdcAddress == address(0)) revert ZeroAddress();
         
         // Revoke old approval
-        USDC.safeApprove(FELIX_VAULT, 0);
+        USDC.safeIncreaseAllowance(FELIX_VAULT, 0);
         
         USDC = IERC20(usdcAddress);
         
         // Approve new USDC
-        USDC.safeApprove(FELIX_VAULT, type(uint256).max);
+        USDC.safeIncreaseAllowance(FELIX_VAULT, type(uint256).max);
     }
 
     /**
@@ -432,15 +438,6 @@ contract HyperEVMVault is Initializable, OwnableUpgradeable {
                 IERC20(token).safeTransfer(msg.sender, balance);
             }
         }
-    }
-
-    /**
-     * @notice Re-approve Felix vault for USDC (owner only).
-     * @dev Useful if approval was revoked or needs to be refreshed.
-     */
-    function reapproveFelixVault() external onlyOwner {
-        USDC.safeApprove(FELIX_VAULT, 0);
-        USDC.safeApprove(FELIX_VAULT, type(uint256).max);
     }
 
     // ═══════════════════════════════════════════════════════════════════════════

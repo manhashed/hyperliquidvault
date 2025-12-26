@@ -2,12 +2,12 @@
   "network": "hyperEvmMainnet",
   "networkType": "mainnet",
   "chainId": 999,
-  "timestamp": "2025-12-12T12:41:36.501Z",
+  "timestamp": "2025-12-26T20:48:52.053Z",
   "deployer": "0x2bBb22bE8deaB3487b378C95e276768a772C2738",
-  "proxy": "0x5403B2ec6fd1ffcE9ea38e33A16DbCa7dBBE9E31",
-  "implementation": "0xA70bA4c58D803A4D485D369e843C457Ee5AC27DB",
-  "proxyAdmin": "0x4D321C05B68E4aD6090AaeFb06eF06297AdbFF96",
-  "stablecoin": {
+  "proxy": "0x7883920e7872F7b6aAe83d99e78C69C438Ab6da0",
+  "implementation": "0x9c9dd215D8E6EEe0845C6860095879aC8e5dAC22",
+  "proxyAdmin": "0x0D2644f35d88287e148f310692Fd8FC18aAa9102",
+  "usdc": {
     "name": "USDC",
     "address": "0xb88339CB7199b77E23DB6E890353E22632Ba630f"
   }
