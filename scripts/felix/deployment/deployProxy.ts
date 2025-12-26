@@ -25,7 +25,7 @@ async function main() {
   const config = isMainnet ? USDC_CONFIG.mainnet : USDC_CONFIG.testnet;
   const USDC_ADDRESS = config.address;
 
-  console.log(`Starting HyperEVMVault deployment as Transparent Proxy on HyperEVM ${isMainnet ? "Mainnet" : "Testnet"}...`);
+  console.log(`Starting FelixVault deployment as Transparent Proxy on HyperEVM ${isMainnet ? "Mainnet" : "Testnet"}...`);
   console.log("=".repeat(80));
 
   // Get the deployer account
@@ -40,14 +40,14 @@ async function main() {
   console.log("   Balance:", ethers.formatEther(balance), "HYPE");
   console.log(`   ${config.name} Address:`, USDC_ADDRESS);
 
-  // Deploy HyperEVMVault as Transparent Proxy
-  console.log("\n🚀 Deploying HyperEVMVault as Transparent Proxy...");
-  const HyperEVMVault = await ethers.getContractFactory("HyperEVMVault");
+  // Deploy FelixVault as Transparent Proxy
+  console.log("\n🚀 Deploying FelixVault as Transparent Proxy...");
+  const FelixVault = await ethers.getContractFactory("FelixVault");
   
   // Deploy with transparent proxy pattern
   // The initialize function will be called automatically with these args
   const vault = await upgrades.deployProxy(
-    HyperEVMVault,
+    FelixVault,
     [USDC_ADDRESS, deployer.address],
     { 
       kind: 'transparent',
@@ -58,7 +58,7 @@ async function main() {
   await vault.waitForDeployment();
   const proxyAddress = await vault.getAddress();
   
-  console.log("✅ HyperEVMVault Proxy deployed to:", proxyAddress);
+  console.log("✅ FelixVault Proxy deployed to:", proxyAddress);
 
   // Get implementation address
   const implementationAddress = await upgrades.erc1967.getImplementationAddress(proxyAddress);

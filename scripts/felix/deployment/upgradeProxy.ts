@@ -38,7 +38,7 @@ async function main() {
     process.exit(1);
   }
 
-  console.log(`Upgrading HyperCoreVault implementation on ${isMainnet ? "Mainnet" : "Testnet"}...`);
+  console.log(`Upgrading FelixVault implementation on ${isMainnet ? "Mainnet" : "Testnet"}...`);
   console.log("=".repeat(80));
 
   // Get the deployer account
@@ -58,10 +58,10 @@ async function main() {
 
   // Deploy new implementation
   console.log("\n🚀 Deploying new implementation...");
-  const HyperCoreVaultV2 = await ethers.getContractFactory("HyperCoreVault");
+  const FelixVaultV2 = await ethers.getContractFactory("FelixVault");
   
   // Upgrade the proxy to the new implementation
-  const upgraded = await upgrades.upgradeProxy(PROXY_ADDRESS, HyperCoreVaultV2);
+  const upgraded = await upgrades.upgradeProxy(PROXY_ADDRESS, FelixVaultV2);
   await upgraded.waitForDeployment();
 
   console.log("✅ Proxy upgraded successfully!");
@@ -83,7 +83,7 @@ async function main() {
 
   // Verify the upgrade worked
   console.log("\n🔍 Verifying upgrade...");
-  const vault = await ethers.getContractAt("HyperCoreVault", PROXY_ADDRESS);
+  const vault = await ethers.getContractAt("FelixVault", PROXY_ADDRESS);
   const owner = await vault.owner();
   console.log("Vault owner:", owner);
   console.log("✅ Upgrade verified - proxy is still functional!");

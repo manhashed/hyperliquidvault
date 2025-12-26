@@ -27,7 +27,7 @@ async function main() {
   
   // Get vault address from environment or deployment-info.json
   const fs = require('fs');
-  let VAULT_ADDRESS = process.env.HYPEREVM_VAULT || process.env.VAULT_ADDRESS;
+  let VAULT_ADDRESS = process.env.FELIX_VAULT || process.env.VAULT_ADDRESS;
   
   if (!VAULT_ADDRESS && fs.existsSync('deployment-info.json')) {
     const deploymentInfo = JSON.parse(fs.readFileSync('deployment-info.json', 'utf8'));
@@ -35,7 +35,7 @@ async function main() {
   }
 
   console.log("=".repeat(80));
-  console.log(`Balance Checker for HyperEVMVault on ${isMainnet ? "Mainnet" : "Testnet"}`);
+  console.log(`Balance Checker for FelixVault on ${isMainnet ? "Mainnet" : "Testnet"}`);
   console.log("=".repeat(80));
   console.log(`Network: ${networkName}\n`);
 
@@ -74,7 +74,7 @@ async function main() {
 
     // Get vault contract and check user position
     try {
-      const vault = await ethers.getContractAt("HyperEVMVault", VAULT_ADDRESS);
+      const vault = await ethers.getContractAt("FelixVault", VAULT_ADDRESS);
       const userShares = await vault.getUserShares(deployerAddress);
       const userAssets = await vault.getUserAssets(deployerAddress);
       const userDeposit = await vault.getUserDeposit(deployerAddress);
@@ -94,7 +94,7 @@ async function main() {
       console.log("Could not fetch vault position (contract may not be deployed)");
     }
   } else {
-    console.log("Vault address not set. To check vault balances set HYPEREVM_VAULT or VAULT_ADDRESS in your .env file.");
+    console.log("Vault address not set. To check vault balances set FELIX_VAULT or VAULT_ADDRESS in your .env file.");
   }
 
   // ----------- Summary Status -----------

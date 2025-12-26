@@ -23,7 +23,7 @@ async function main() {
   const config = isMainnet ? USDC_CONFIG.mainnet : USDC_CONFIG.testnet;
   const USDC_ADDRESS = config.address;
 
-  console.log(`Starting HyperEVMVault deployment on HyperEVM ${isMainnet ? "Mainnet" : "Testnet"}...`);
+  console.log(`Starting FelixVault deployment on HyperEVM ${isMainnet ? "Mainnet" : "Testnet"}...`);
   console.log(`Network: ${networkName}`);
   console.log(`USDC: ${config.name} at ${USDC_ADDRESS}`);
 
@@ -35,21 +35,21 @@ async function main() {
   const balance = await ethers.provider.getBalance(deployer.address);
   console.log("Account balance:", ethers.formatEther(balance), "HYPE");
 
-  // Deploy HyperEVMVault
-  console.log("\nDeploying HyperEVMVault...");
-  const HyperEVMVault = await ethers.getContractFactory("HyperEVMVault");
-  const vault = await HyperEVMVault.deploy();
+  // Deploy FelixVault
+  console.log("\nDeploying FelixVault...");
+  const FelixVault = await ethers.getContractFactory("FelixVault");
+  const vault = await FelixVault.deploy();
   
   await vault.waitForDeployment();
   const vaultAddress = await vault.getAddress();
   
-  console.log("HyperEVMVault deployed to:", vaultAddress);
+  console.log("FelixVault deployed to:", vaultAddress);
 
   // Initialize the vault
-  console.log("\nInitializing HyperEVMVault...");
+  console.log("\nInitializing FelixVault...");
   const initTx = await vault.initialize(USDC_ADDRESS, deployer.address);
   await initTx.wait();
-  console.log("HyperEVMVault initialized successfully!");
+  console.log("FelixVault initialized successfully!");
 
   console.log("\n=== Deployment Summary ===");
   console.log("Network:", isMainnet ? "MAINNET" : "TESTNET", `(${networkName})`);

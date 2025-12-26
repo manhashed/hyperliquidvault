@@ -26,19 +26,19 @@ async function main() {
   const usdc = isMainnet ? USDC_CONFIG.mainnet : USDC_CONFIG.testnet;
   
   // Configuration
-  const VAULT_ADDRESS = process.env.HYPEREVM_VAULT || "";
+  const VAULT_ADDRESS = process.env.FELIX_VAULT || "";
   const APPROVAL_AMOUNT = "1000000"; // 1M USDC
   const DEPOSIT_AMOUNT = "10"; // 1 USDC
 
   if (!VAULT_ADDRESS) {
-    console.error("❌ Error: HYPEREVM_VAULT or VAULT_ADDRESS not set in environment variables");
-    console.log("Please set HYPEREVM_VAULT in your .env file or run:");
-    console.log("HYPEREVM_VAULT=0x... npx hardhat run scripts/hyperevm/testing/deposit.ts --network hyperEvmTestnet");
+    console.error("❌ Error: FELIX_VAULT not set in environment variables");
+    console.log("Please set FELIX_VAULT in your .env file or run:");
+    console.log("FELIX_VAULT=0x... npx hardhat run scripts/hyperevm/testing/deposit.ts --network hyperEvmTestnet");
     process.exit(1);
   }
 
   console.log("=".repeat(80));
-  console.log(`Deposit ${usdc.name} to HyperEVMVault on ${isMainnet ? "Mainnet" : "Testnet"}`);
+  console.log(`Deposit ${usdc.name} to FelixVault on ${isMainnet ? "Mainnet" : "Testnet"}`);
   console.log("=".repeat(80));
   console.log(`Network: ${isMainnet ? "MAINNET" : "TESTNET"} (${networkName})`);
   console.log(`Vault Address: ${VAULT_ADDRESS}`);
@@ -80,9 +80,9 @@ async function main() {
   console.log("Proceeding with approval and deposit...");
   console.log("=".repeat(80));
 
-  // Get HyperEVMVault contract
+  // Get FelixVault contract
   const vault = await ethers.getContractAt(
-    "HyperEVMVault",
+    "FelixVault",
     VAULT_ADDRESS
   );
 

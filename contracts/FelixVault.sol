@@ -16,7 +16,7 @@ import {IERC4626} from "@openzeppelin/contracts/interfaces/IERC4626.sol";
  * @dev Deploy on HyperEVM. The underlying ERC4626 vault is at 0x8A862fD6c12f9ad34C9c2ff45AB2b6712e8CEa27.
  *      This contract maintains a 1:1 mapping between user deposits and vault shares.
  */
-contract HyperEVMVault is Initializable, OwnableUpgradeable {
+contract FelixVault is Initializable, OwnableUpgradeable {
     using SafeERC20 for IERC20;
 
     // Constants
@@ -449,7 +449,7 @@ contract HyperEVMVault is Initializable, OwnableUpgradeable {
      * @dev Reverts to prevent accidental native token deposits.
      */
     receive() external payable {
-        revert("HyperEVMVault: Native tokens not accepted");
+        revert("FelixVault: Native tokens not accepted");
     }
 }
 

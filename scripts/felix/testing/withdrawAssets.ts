@@ -29,12 +29,12 @@ async function main() {
   const config = isMainnet ? USDC_CONFIG.mainnet : USDC_CONFIG.testnet;
 
   console.log("=".repeat(80));
-  console.log(`Withdraw Assets (by percentage) from HyperEVMVault on ${isMainnet ? "Mainnet" : "Testnet"}`);
+  console.log(`Withdraw Assets (by percentage) from FelixVault on ${isMainnet ? "Mainnet" : "Testnet"}`);
   console.log("=".repeat(80));
 
   // Get vault address from environment or deployment-info.json
   const fs = require('fs');
-  let VAULT_ADDRESS = process.env.HYPEREVM_VAULT || process.env.VAULT_ADDRESS;
+  let VAULT_ADDRESS = process.env.FELIX_VAULT || process.env.VAULT_ADDRESS;
   
   if (!VAULT_ADDRESS && fs.existsSync('deployment-info.json')) {
     const deploymentInfo = JSON.parse(fs.readFileSync('deployment-info.json', 'utf8'));
@@ -44,7 +44,7 @@ async function main() {
   
   if (!VAULT_ADDRESS) {
     console.error("❌ VAULT_ADDRESS not found!");
-    console.log("Please set HYPEREVM_VAULT or VAULT_ADDRESS environment variable or ensure deployment-info.json exists");
+    console.log("Please set FELIX_VAULT or VAULT_ADDRESS environment variable or ensure deployment-info.json exists");
     process.exit(1);
   }
 
@@ -76,8 +76,8 @@ async function main() {
   }
 
   // Connect to vault contract
-  console.log("\n🔗 Connecting to HyperEVMVault...");
-  const vault = await ethers.getContractAt("HyperEVMVault", VAULT_ADDRESS);
+  console.log("\n🔗 Connecting to FelixVault...");
+  const vault = await ethers.getContractAt("FelixVault", VAULT_ADDRESS);
 
   // Get user position
   const userShares = await vault.getUserShares(signer.address);
