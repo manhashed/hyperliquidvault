@@ -26,9 +26,9 @@ async function main() {
   const usdc = isMainnet ? USDC_CONFIG.mainnet : USDC_CONFIG.testnet;
   
   // Configuration
-  const VAULT_ADDRESS = process.env.HYPEREVM_VAULT || process.env.VAULT_ADDRESS || "";
+  const VAULT_ADDRESS = process.env.HYPEREVM_VAULT || "";
   const APPROVAL_AMOUNT = "1000000"; // 1M USDC
-  const DEPOSIT_AMOUNT = "5"; // 1 USDC
+  const DEPOSIT_AMOUNT = "10"; // 1 USDC
 
   if (!VAULT_ADDRESS) {
     console.error("❌ Error: HYPEREVM_VAULT or VAULT_ADDRESS not set in environment variables");

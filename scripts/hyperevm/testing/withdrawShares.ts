@@ -29,7 +29,7 @@ async function main() {
   const config = isMainnet ? USDC_CONFIG.mainnet : USDC_CONFIG.testnet;
 
   console.log("=".repeat(80));
-  console.log(`Withdraw ${config.name} from HyperEVMVault on ${isMainnet ? "Mainnet" : "Testnet"}`);
+  console.log(`Withdraw Shares (by percentage) from HyperEVMVault on ${isMainnet ? "Mainnet" : "Testnet"}`);
   console.log("=".repeat(80));
 
   // Get vault address from environment or deployment-info.json
@@ -48,16 +48,19 @@ async function main() {
     process.exit(1);
   }
 
-  // Withdrawal mode: "shares" or "assets"
-  const WITHDRAW_MODE = process.env.WITHDRAW_MODE || "assets"; // "shares" or "assets"
-  const WITHDRAW_AMOUNT = process.env.WITHDRAW_AMOUNT ? parseFloat(process.env.WITHDRAW_AMOUNT) : 0.5; // Amount in USDC or shares
+  // Withdrawal percentage (0-100)
+  const WITHDRAW_PERCENTAGE = 100
+
+  if (WITHDRAW_PERCENTAGE <= 0 || WITHDRAW_PERCENTAGE > 100) {
+    console.error("❌ Invalid withdrawal percentage! Must be between 0 and 100");
+    process.exit(1);
+  }
 
   console.log("\n📋 Configuration:");
   console.log("   Network:", isMainnet ? "MAINNET" : "TESTNET", `(${networkName})`);
   console.log("   USDC:", config.name);
   console.log("   Vault Address:", VAULT_ADDRESS);
-  console.log("   Withdraw Mode:", WITHDRAW_MODE);
-  console.log("   Withdraw Amount:", WITHDRAW_AMOUNT, WITHDRAW_MODE === "shares" ? "shares" : config.name);
+  console.log("   Withdraw Percentage:", WITHDRAW_PERCENTAGE, "% of your shares");
 
   // Get the signer
   const [signer] = await ethers.getSigners();
@@ -91,6 +94,19 @@ async function main() {
     process.exit(1);
   }
 
+  // Calculate shares to withdraw based on percentage
+  const sharesToWithdraw = (userShares * BigInt(Math.floor(WITHDRAW_PERCENTAGE * 100))) / 10000n; // Percentage scaled by 10000 (100.00%)
+  
+  if (sharesToWithdraw === 0n) {
+    console.error("❌ Calculated withdrawal amount is 0! Percentage might be too small.");
+    process.exit(1);
+  }
+
+  if (sharesToWithdraw > userShares) {
+    console.error(`❌ Calculated shares (${sharesToWithdraw.toString()}) exceed your shares (${userShares.toString()})!`);
+    process.exit(1);
+  }
+
   // Get USDC contract
   const usdc = await ethers.getContractAt("IERC20", config.address);
 
@@ -102,35 +118,17 @@ async function main() {
   console.log(`   Vault ${config.name} Balance:`, ethers.formatUnits(vaultBalanceBefore, config.decimals), config.name);
   console.log(`   Your ${config.name} Balance:`, ethers.formatUnits(userBalanceBefore, config.decimals), config.name);
 
-  let withdrawTx;
-  let withdrawAmountWei;
+  // Preview assets that will be received
+  const assetsToReceive = await vault.previewRedeem(sharesToWithdraw);
+
+  console.log("\n📊 Withdrawal Details:");
+  console.log(`   Percentage: ${WITHDRAW_PERCENTAGE}%`);
+  console.log(`   Shares to Withdraw: ${sharesToWithdraw.toString()}`);
+  console.log(`   Estimated Assets to Receive: ${ethers.formatUnits(assetsToReceive, config.decimals)} ${config.name}`);
 
   try {
-    if (WITHDRAW_MODE === "shares") {
-      // Withdraw by shares - shares are raw uint256, not decimals
-      const sharesToWithdraw = BigInt(Math.floor(WITHDRAW_AMOUNT));
-      
-      if (userShares < sharesToWithdraw) {
-        console.error(`❌ Insufficient shares! You have ${userShares.toString()}, trying to withdraw ${sharesToWithdraw.toString()}`);
-        process.exit(1);
-      }
-
-      console.log("\n🚀 Withdrawing by shares...");
-      console.log(`   Shares to withdraw: ${sharesToWithdraw.toString()}`);
-      withdrawTx = await vault.withdraw(sharesToWithdraw);
-    } else {
-      // Withdraw by assets (USDC amount)
-      withdrawAmountWei = ethers.parseUnits(WITHDRAW_AMOUNT.toString(), config.decimals);
-      
-      if (userAssets < withdrawAmountWei) {
-        console.error(`❌ Insufficient assets! You have ${ethers.formatUnits(userAssets, config.decimals)} ${config.name}, trying to withdraw ${WITHDRAW_AMOUNT} ${config.name}`);
-        process.exit(1);
-      }
-
-      console.log("\n🚀 Withdrawing by assets...");
-      console.log(`   Amount to withdraw: ${WITHDRAW_AMOUNT} ${config.name}`);
-      withdrawTx = await vault.withdrawAssets(withdrawAmountWei);
-    }
+    console.log("\n🚀 Submitting withdrawal...");
+    const withdrawTx = await vault.withdraw(sharesToWithdraw);
     
     console.log("   Transaction Hash:", withdrawTx.hash);
     console.log("   Waiting for confirmation...");
@@ -154,11 +152,13 @@ async function main() {
     console.log("\n" + "=".repeat(80));
     console.log("✅ WITHDRAWAL COMPLETED SUCCESSFULLY");
     console.log("=".repeat(80));
-    console.log(`Amount Withdrawn: ${WITHDRAW_AMOUNT} ${WITHDRAW_MODE === "shares" ? "shares" : config.name}`);
+    console.log(`Percentage Withdrawn: ${WITHDRAW_PERCENTAGE}% of shares`);
+    console.log(`Shares Withdrawn: ${sharesToWithdraw.toString()}`);
+    console.log(`Assets Received: ${ethers.formatUnits(assetsToReceive, config.decimals)} ${config.name}`);
     console.log("=".repeat(80));
 
     console.log("\n📊 Your Updated Position:");
-    console.log(`   Shares: ${userSharesAfter.toString()}`);
+    console.log(`   Shares: ${userSharesAfter.toString()} (${((Number(userSharesAfter) / Number(userShares)) * 100).toFixed(2)}% remaining)`);
     console.log(`   Assets: ${ethers.formatUnits(userAssetsAfter, config.decimals)} ${config.name}`);
 
     console.log("\n📊 Balances After Withdrawal:");
