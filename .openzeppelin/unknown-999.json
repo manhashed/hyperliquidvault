@@ -10,6 +10,11 @@
       "address": "0x5403B2ec6fd1ffcE9ea38e33A16DbCa7dBBE9E31",
       "txHash": "0xeeeeb001cccaf4fc545149c20420ffcbe58ff0c2d74cac524a54389cf66f534c",
       "kind": "transparent"
+    },
+    {
+      "address": "0x7883920e7872F7b6aAe83d99e78C69C438Ab6da0",
+      "txHash": "0x0fa0869d4e84e13660c951ab6f4d4809c2c56c5f429a6a6a780d4c67927be53f",
+      "kind": "transparent"
     }
   ],
   "impls": {
@@ -241,6 +246,153 @@
           "t_contract(IERC20)676": {
             "label": "contract IERC20",
             "numberOfBytes": "20"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "3cd0dd9aa5d83915d4c4fc5cde0e2a048f88cb72996e70c2a60025967fb187cb": {
+      "address": "0x9c9dd215D8E6EEe0845C6860095879aC8e5dAC22",
+      "txHash": "0x005c596b101a80b343e16e271af18c709a57fb67ce3b10bab9d14ca2514df002",
+      "layout": {
+        "solcVersion": "0.8.28",
+        "storage": [
+          {
+            "label": "USDC",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_contract(IERC20)846",
+            "contract": "HyperEVMVault",
+            "src": "contracts/HyperEVMVault.sol:26"
+          },
+          {
+            "label": "felixVault",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_contract(IERC4626)768",
+            "contract": "HyperEVMVault",
+            "src": "contracts/HyperEVMVault.sol:27"
+          },
+          {
+            "label": "userShares",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "HyperEVMVault",
+            "src": "contracts/HyperEVMVault.sol:30"
+          },
+          {
+            "label": "userDeposits",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "HyperEVMVault",
+            "src": "contracts/HyperEVMVault.sol:31"
+          },
+          {
+            "label": "totalShares",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_uint256",
+            "contract": "HyperEVMVault",
+            "src": "contracts/HyperEVMVault.sol:32"
+          },
+          {
+            "label": "totalDeposits",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_uint256",
+            "contract": "HyperEVMVault",
+            "src": "contracts/HyperEVMVault.sol:33"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)73_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)13_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_contract(IERC20)846": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC4626)768": {
+            "label": "contract IERC4626",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
           }
         },
         "namespaces": {
